@@ -204,6 +204,7 @@ def parse_prereqs(md_path, subfield_key, subject_folder):
                     "id": cid,
                     "title": card.get("title", cid),
                     "level": card.get("level", ""),
+                    "content": card.get("content", ""),
                     "points": card.get("points", []),
                 })
     return {"concepts": concepts, "specific": specific}

@@ -211,16 +211,20 @@ mark { background: #fff3a8; color: inherit; padding: 0 2px; border-radius: 3px; 
   background: var(--bg-soft); border: 1px solid var(--brand); border-radius: 999px;
   padding: 1px 8px; margin-right: 8px;
 }
-.kb-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
-.kb-card { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
-.kb-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-.kb-name { font-weight: 700; font-size: 14px; color: var(--text); }
+.kb-cards { display: flex; flex-direction: column; gap: 14px; }
+.kb-card { background: var(--bg-soft); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.kb-head { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.kb-num { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: var(--brand); color: #fff; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+.kb-name { font-weight: 700; font-size: 15px; color: var(--text); }
 .kb-level {
   font-size: 11px; padding: 1px 8px; border-radius: 999px;
   background: var(--brand-soft); color: var(--brand); border: 1px solid var(--brand); font-weight: 600;
 }
 .kb-points { margin: 0; padding-left: 18px; }
 .kb-points li { font-size: 13px; color: var(--text-soft); margin: 4px 0; line-height: 1.55; }
+.kb-prose { margin: 0; }
+.kb-prose p { font-size: 13.5px; color: var(--text-soft); margin: 0 0 10px 0; line-height: 1.75; }
+.kb-prose p:last-child { margin-bottom: 0; }
 
 /* ---------- flattened discipline view (subfields as inline groups) ---------- */
 .sub-group { margin: 22px 0; }

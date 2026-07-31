@@ -14,7 +14,15 @@ IF "%GH_TOKEN%"=="" (
   exit /b 1
 )
 
-REM ---- 1. assemble real corpus ----
+REM ---- 1. generate KB data (46 prerequisite modules from kb.py) ----
+python gen_kb_js.py
+IF ERRORLEVEL 1 (
+  echo ERROR: gen_kb_js.py failed. Make sure Python is on PATH.
+  pause
+  exit /b 1
+)
+
+REM ---- 2. assemble real corpus ----
 python convert.py --src ..\generator\output --out .
 IF ERRORLEVEL 1 (
   echo ERROR: convert.py failed. Make sure Python is on PATH.

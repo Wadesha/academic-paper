@@ -197,21 +197,61 @@
   }
 
   // ---- prerequisite knowledge module (top of every paper) ----
-  function renderPrereqs(p) {
-    var pre = p.prerequisites;
+
+  // Derive prerequisites at runtime from KB_DATA + paper's discipline.
+  // If window.KB_DATA is loaded (data.kb.js), use 46 new modules (6 universal + 4 discipline = 10).
+  // Otherwise fall back to the paper's embedded prerequisites (from convert.py / seed data).
+  function getPrereqsForPaper(d, s, p) {
+    if (window.KB_DATA && window.KB_UNIVERSAL) {
+      var discId = d.id;
+      var universal = window.KB_UNIVERSAL || [];
+      var discMods = (window.KB_DISCIPLINE || {})[discId] || [];
+      var ids = universal.concat(discMods);
+      var specific = '';
+      if (window.KB_SPECIFIC && s && s.id) {
+        var sid = s.id.toLowerCase().replace(/[^a-z0-9]/g, '');
+        for (var key in window.KB_SPECIFIC) {
+          var k = key.toLowerCase().replace(/[^a-z0-9]/g, '');
+          if (sid.indexOf(k) >= 0 || k.indexOf(sid) >= 0) {
+            specific = window.KB_SPECIFIC[key];
+            break;
+          }
+        }
+      }
+      var concepts = ids.map(function (id) {
+        var mod = window.KB_DATA[id];
+        if (!mod) return null;
+        return { id: id, title: mod.title || id, level: mod.level || '', content: mod.content || '' };
+      }).filter(Boolean);
+      return { concepts: concepts, specific: specific };
+    }
+    return p.prerequisites || { concepts: [], specific: '' };
+  }
+
+  function renderPrereqs(pre) {
     if (!pre || !pre.concepts || !pre.concepts.length) return '';
-    var cards = pre.concepts.map(function (c) {
-      var pts = (c.points || []).map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('');
+    var cards = pre.concepts.map(function (c, idx) {
       var lvl = c.level ? '<span class="kb-level">' + esc(c.level) + '</span>' : '';
+      var body = '';
+      if (c.content) {
+        var paras = c.content.split(/\n\n+/);
+        body = '<div class="kb-prose">' + paras.map(function (para) {
+          return '<p>' + esc(para).replace(/\n/g, '<br>') + '</p>';
+        }).join('') + '</div>';
+      } else if (c.points && c.points.length) {
+        body = '<ul class="kb-points">' + c.points.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>';
+      }
       return '<div class="kb-card">' +
-        '<div class="kb-head"><span class="kb-name">' + esc(c.title) + '</span>' + lvl + '</div>' +
-        '<ul class="kb-points">' + pts + '</ul></div>';
+        '<div class="kb-head"><span class="kb-num">' + (idx + 1) + '</span>' +
+        '<span class="kb-name">' + esc(c.title) + '</span>' + lvl + '</div>' +
+        body + '</div>';
     }).join('');
     var specific = pre.specific
       ? '<p class="prereq-specific"><span class="prereq-tag">本文专题</span>' + esc(pre.specific) + '</p>'
       : '';
+    var count = pre.concepts.length;
     return '<details class="prereq-module" open>' +
-      '<summary><span class="prereq-title">前置知识 · Prerequisites</span>' +
+      '<summary><span class="prereq-title">前置知识 · Prerequisites（' + count + ' 个模块）</span>' +
       '<span class="prereq-hint">阅读本文前建议掌握的真实基础概念（点击可折叠）</span></summary>' +
       '<div class="prereq-body">' + specific + '<div class="kb-cards">' + cards + '</div></div>' +
       '</details>';
@@ -265,7 +305,7 @@
       '<div class="meta-line">' + esc((p.authors || []).join(', ')) + (p.year ? ' · ' + p.year : '') + (p.venue ? ' · ' + esc(p.venue) : '') + '</div>' +
       '<div class="kw-line">' + tags(p.keywords) + '</div>' +
       '<div class="abstract-box"><span class="label">摘要</span>' + esc(p.abstract || '') + '</div>' +
-      renderPrereqs(p) +
+      renderPrereqs(getPrereqsForPaper(d, s, p)) +
       dlBar +
       sections +
       '<section class="references"><h2>参考文献（真实可核验 · ' + (p.references || []).length + ' 条）</h2><ol>' + refs + '</ol></section>' +
