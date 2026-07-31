@@ -1,19 +1,6 @@
 @echo off
 REM ============================================================================
 REM  publish.bat  --  One-click build + push to GitHub (Wadesha/academic-paper)
-REM
-REM  This script does two things:
-REM    1) Runs "python convert.py --src ..\generator\output --out ." to assemble
-REM       the real corpus (OpenAlex/arXiv citations + prerequisite modules).
-REM    2) Force-pushes the site to the Wadesha/academic-paper repository root,
-REM       replacing the old template site. GitHub Pages then serves it.
-REM
-REM  SECURITY: your GitHub PAT is read from the GH_TOKEN environment variable
-REM  only. It is NOT written into this file or any repo file.
-REM
-REM  Before running, open cmd in this folder and set your token once:
-REM       set GH_TOKEN=ghp_your_token_here
-REM  Then run this file. Or run "gh auth login" once instead.
 REM ============================================================================
 
 cd /d "%~dp0"
@@ -37,13 +24,15 @@ IF ERRORLEVEL 1 (
 
 REM ---- 2. push to GitHub ----
 git init -q 2>nul
-REM git needs an author to commit; set it locally for this repo only.
+REM Local git identity for this repo only (commit requires an author).
 git config user.email "wade@users.noreply.github.com" 2>nul
 git config user.name "Wade" 2>nul
 git remote remove origin 2>nul
 git remote add origin https://github.com/Wadesha/academic-paper.git
 git add -A
-git commit -q -m "Verified-corpus site: real OpenAlex/arXiv citations + prerequisite modules" || echo No new commit.
+git commit -q -m "Verified-corpus site: real OpenAlex/arXiv citations + prerequisite modules" || echo Note: nothing new to commit.
+REM git init may create "master"; rename current branch to "main" before push.
+git branch -M main 2>nul
 git push --force https://%GH_TOKEN%@github.com/Wadesha/academic-paper.git main
 IF ERRORLEVEL 1 (
   echo ERROR: git push failed.
@@ -53,5 +42,4 @@ IF ERRORLEVEL 1 (
 
 echo.
 echo Done. GitHub Pages URL: https://wadesha.github.io/academic-paper/
-echo If Pages does not update, check Settings -^> Pages source is "main / (root)".
 pause
