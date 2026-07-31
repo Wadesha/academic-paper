@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Long Read Sequencing Assembly under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Long Read Sequencing Assembly. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Long Read Sequencing Assembly is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Li (2018) — "Minimap2: pairwise alignment for nucleotide sequences", Bioinformatics (cited 17224).
+\item Magoč et al. (2011) — "FLASH: fast length adjustment of short reads to improve genome assemblies", Bioinformatics (cited 15908).
+\item Wick et al. (2017) — "Unicycler: Resolving bacterial genome assemblies from short and long sequencing reads", PLoS Computational Biology (cited 8935).
+\item Koren et al. (2017) — "Canu: scalable and accurate long-read assembly via adaptive <i>k</i> -mer weighting and repeat separation", Genome Research (cited 8269).
+\item Kolmogorov et al. (2019) — "Assembly of long, error-prone reads using repeat graphs", Nature Biotechnology (cited 6480).
+\item Jonathan et al. (2020) — "Denoising Diffusion Probabilistic Models", arXiv (Cornell University) (cited 5653).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Long Read Sequencing Assembly and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Long Read Sequencing Assembly. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Heng Li. Minimap2: pairwise alignment for nucleotide sequences. \emph{Bioinformatics}, 2018. DOI:10.1093/bioinformatics/bty191
+\bibitem{ref2} Tanja Magoč, Steven L. Salzberg. FLASH: fast length adjustment of short reads to improve genome assemblies. \emph{Bioinformatics}, 2011. DOI:10.1093/bioinformatics/btr507
+\bibitem{ref3} Ryan R. Wick, Louise M. Judd, Claire L. Gorrie et al.. Unicycler: Resolving bacterial genome assemblies from short and long sequencing reads. \emph{PLoS Computational Biology}, 2017. DOI:10.1371/journal.pcbi.1005595
+\bibitem{ref4} Sergey Koren, Brian P. Walenz, Konstantin Berlin et al.. Canu: scalable and accurate long-read assembly via adaptive <i>k</i> -mer weighting and repeat separation. \emph{Genome Research}, 2017. DOI:10.1101/gr.215087.116
+\bibitem{ref5} Mikhail Kolmogorov, Jeffrey Yuan, Yu Lin et al.. Assembly of long, error-prone reads using repeat graphs. \emph{Nature Biotechnology}, 2019. DOI:10.1038/s41587-019-0072-8
+\bibitem{ref6} Ho, Jonathan, Ajay N. Jain, Pieter Abbeel. Denoising Diffusion Probabilistic Models. \emph{arXiv (Cornell University)}, 2020. DOI:10.48550/arxiv.2006.11239
+\bibitem{ref7} Ruibang Luo, Binghang Liu, Yinlong Xie et al.. SOAPdenovo2: an empirically improved memory-efficient short-read <i>de novo</i> assembler. \emph{GigaScience}, 2012. DOI:10.1186/2047-217x-1-18
+\bibitem{ref8} Heng Li. Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM. \emph{DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)}, 2013. DOI:10.48550/arxiv.1303.3997
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Graph Neural Network Representation Learning under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Graph Neural Network Representation Learning. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Graph Neural Network Representation Learning is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Wang et al. (2019) — "Dynamic Graph CNN for Learning on Point Clouds", ACM Transactions on Graphics (cited 6835).
+\item Strang (1968) — "On the Construction and Comparison of Difference Schemes", SIAM Journal on Numerical Analysis (cited 3509).
+\item Wang et al. (2019) — "Heterogeneous Graph Attention Network" (cited 2911).
+\item Xie et al. (2018) — "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties", Physical Review Letters (cited 2727).
+\item Bengio et al. (2013) — "Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation", arXiv (Cornell University) (cited 2009).
+\item Larraanaga et al. (2001) — "Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation", Kluwer Academic Publishers eBooks (cited 1936).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Graph Neural Network Representation Learning and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Graph Neural Network Representation Learning. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Yue Wang, Yongbin Sun, Ziwei Liu et al.. Dynamic Graph CNN for Learning on Point Clouds. \emph{ACM Transactions on Graphics}, 2019. DOI:10.1145/3326362
+\bibitem{ref2} Gilbert Strang. On the Construction and Comparison of Difference Schemes. \emph{SIAM Journal on Numerical Analysis}, 1968. DOI:10.1137/0705041
+\bibitem{ref3} Xiao Wang, Houye Ji, Chuan Shi et al.. Heterogeneous Graph Attention Network. \emph{}, 2019. DOI:10.1145/3308558.3313562
+\bibitem{ref4} Tian Xie, Jeffrey C. Grossman. Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties. \emph{Physical Review Letters}, 2018. DOI:10.1103/physrevlett.120.145301
+\bibitem{ref5} Yoshua Bengio, Nicholas Léonard, Aaron Courville. Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation. \emph{arXiv (Cornell University)}, 2013. DOI:10.48550/arxiv.1308.3432
+\bibitem{ref6} Pedro Larraanaga, José A. Lozano. Estimation of Distribution Algorithms: A New Tool for Evolutionary Computation. \emph{Kluwer Academic Publishers eBooks}, 2001. 
+\bibitem{ref7} Si Zhang, Hanghang Tong, Jiejun Xu et al.. Graph convolutional networks: a comprehensive review. \emph{Computational Social Networks}, 2019. DOI:10.1186/s40649-019-0069-y
+\bibitem{ref8} Simon Batzner, Albert Musaelian, Lixin Sun et al.. E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials. \emph{Nature Communications}, 2022. DOI:10.1038/s41467-022-29939-5
+\end{thebibliography}
+\end{document}

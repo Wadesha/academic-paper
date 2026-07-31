@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Scalable Genome Wide Association Study for Large-Scale Settings}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Genome Wide Association Study. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Genome Wide Association Study is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Dunham et al. (2012) — "An integrated encyclopedia of DNA elements in the human genome", Nature (cited 19581).
+\item Chang et al. (2015) — "Second-generation PLINK: rising to the challenge of larger and richer datasets", GigaScience (cited 14199).
+\item Price et al. (2006) — "Principal components analysis corrects for stratification in genome-wide association studies", Nature Genetics (cited 10822).
+\item Bowden et al. (2015) — "Mendelian randomization with invalid instruments: effect estimation and bias detection through Egger regression", International Journal of Epidemiology (cited 10750).
+\item Prior work (2013) — "The Genotype-Tissue Expression (GTEx) project.", PubMed (cited 10115).
+\item Bycroft et al. (2018) — "The UK Biobank resource with deep phenotyping and genomic data", Nature (cited 9924).
+\end{itemize}
+
+\section{Method}
+We decompose the problem across shards with a communication-efficient aggregation rule that keeps overhead sublinear in scale. We instantiate this idea for Genome Wide Association Study and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Genome Wide Association Study. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Ian Dunham, Ewan Birney, Javier Herrero et al.. An integrated encyclopedia of DNA elements in the human genome. \emph{Nature}, 2012. DOI:10.1038/nature11247
+\bibitem{ref2} Christopher Chang, Carson C. Chow, Laurent CAM Tellier et al.. Second-generation PLINK: rising to the challenge of larger and richer datasets. \emph{GigaScience}, 2015. DOI:10.1186/s13742-015-0047-8
+\bibitem{ref3} Alkes L. Price, Nick J. Patterson, Robert M. Plenge et al.. Principal components analysis corrects for stratification in genome-wide association studies. \emph{Nature Genetics}, 2006. DOI:10.1038/ng1847
+\bibitem{ref4} Jack Bowden, George Davey Smith, Stephen Burgess. Mendelian randomization with invalid instruments: effect estimation and bias detection through Egger regression. \emph{International Journal of Epidemiology}, 2015. DOI:10.1093/ije/dyv080
+\bibitem{ref5} . The Genotype-Tissue Expression (GTEx) project.. \emph{PubMed}, 2013. DOI:10.1038/ng.2653
+\bibitem{ref6} Clare Bycroft, Colin Freeman, Desislava Petkova et al.. The UK Biobank resource with deep phenotyping and genomic data. \emph{Nature}, 2018. DOI:10.1038/s41586-018-0579-z
+\bibitem{ref7} Jack Bowden, George Davey Smith, Philip Haycock et al.. Consistent Estimation in Mendelian Randomization with Some Invalid Instruments Using a Weighted Median Estimator. \emph{Genetic Epidemiology}, 2016. DOI:10.1002/gepi.21965
+\bibitem{ref8} Paul R. Burton, David G. Clayton, Lon R. Cardon et al.. Genome-wide association study of 14,000 cases of seven common diseases and 3,000 shared controls. \emph{Nature}, 2007. DOI:10.1038/nature05911
+\end{thebibliography}
+\end{document}

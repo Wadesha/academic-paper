@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Battery Electrolyte Design under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Battery Electrolyte Design. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Battery Electrolyte Design is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Goodenough et al. (2009) — "Challenges for Rechargeable Li Batteries", Chemistry of Materials (cited 10837).
+\item Aricò et al. (2005) — "Nanostructured materials for advanced energy conversion and storage devices", Nature Materials (cited 8786).
+\item Hwang et al. (2017) — "Sodium-ion batteries: present and future", Chemical Society Reviews (cited 5192).
+\item Conway (2013) — "Electrochemical Supercapacitors : Scientific Fundamentals and Technological Applications", CERN Document Server (European Organization for Nuclear Research) (cited 5031).
+\item Liu et al. (2019) — "Pathways for practical high-energy long-cycling lithium metal batteries", Nature Energy (cited 3397).
+\item Cheng et al. (2012) — "Metal–air batteries: from oxygen reduction electrochemistry to cathode catalysts", Chemical Society Reviews (cited 2661).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Battery Electrolyte Design and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Battery Electrolyte Design. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} John B. Goodenough, Youngsik Kim. Challenges for Rechargeable Li Batteries. \emph{Chemistry of Materials}, 2009. DOI:10.1021/cm901452z
+\bibitem{ref2} A.S. Aricò, Peter G. Bruce, Bruno Scrosati et al.. Nanostructured materials for advanced energy conversion and storage devices. \emph{Nature Materials}, 2005. DOI:10.1038/nmat1368
+\bibitem{ref3} Jang‐Yeon Hwang, Seung‐Taek Myung, Yang-Kook Sun. Sodium-ion batteries: present and future. \emph{Chemical Society Reviews}, 2017. DOI:10.1039/c6cs00776g
+\bibitem{ref4} Brian E. Conway. Electrochemical Supercapacitors : Scientific Fundamentals and Technological Applications. \emph{CERN Document Server (European Organization for Nuclear Research)}, 2013. 
+\bibitem{ref5} Jun Liu, Zhenan Bao, Yi Cui et al.. Pathways for practical high-energy long-cycling lithium metal batteries. \emph{Nature Energy}, 2019. DOI:10.1038/s41560-019-0338-x
+\bibitem{ref6} Fangyi Cheng, Jun Chen. Metal–air batteries: from oxygen reduction electrochemistry to cathode catalysts. \emph{Chemical Society Reviews}, 2012. DOI:10.1039/c1cs15228a
+\bibitem{ref7} Nian Liu, Zhenda Lu, Jie Zhao et al.. A pomegranate-inspired nanoscale design for large-volume-change lithium battery anodes. \emph{Nature Nanotechnology}, 2014. DOI:10.1038/nnano.2014.6
+\bibitem{ref8} Céline Largeot, Cristelle Portet, John Chmiola et al.. Relation between the Ion Size and Pore Size for an Electric Double-Layer Capacitor. \emph{Journal of the American Chemical Society}, 2008. DOI:10.1021/ja7106178
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Efficient Cryo Electron Microscopy Structure: A Resource-Aware Approach}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Cryo Electron Microscopy Structure. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Cryo Electron Microscopy Structure is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Wrapp et al. (2020) — "Cryo-EM structure of the 2019-nCoV spike in the prefusion conformation", Science (cited 9807).
+\item Liebschner et al. (2019) — "Macromolecular structure determination using X-rays, neutrons and electrons: recent developments in <i>Phenix</i>", Acta Crystallographica Section D Structural Biology (cited 7509).
+\item Scheres (2012) — "RELION: Implementation of a Bayesian approach to cryo-EM structure determination", Journal of Structural Biology (cited 6106).
+\item Baek et al. (2021) — "Accurate prediction of protein structures and interactions using a three-track neural network", Science (cited 5818).
+\item Henderson et al. (1990) — "Model for the structure of bacteriorhodopsin based on high-resolution electron cryo-microscopy", Journal of Molecular Biology (cited 2981).
+\item Shen et al. (2006) — "Statistical potential for assessment and prediction of protein structures", Protein Science (cited 2397).
+\end{itemize}
+
+\section{Method}
+We reduce the dominant computational cost via adaptive resource allocation, activating only the components needed per input. We instantiate this idea for Cryo Electron Microscopy Structure and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Cryo Electron Microscopy Structure. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Daniel Wrapp, Nianshuang Wang, Kizzmekia S. Corbett et al.. Cryo-EM structure of the 2019-nCoV spike in the prefusion conformation. \emph{Science}, 2020. DOI:10.1126/science.abb2507
+\bibitem{ref2} Dorothée Liebschner, Pavel V. Afonine, Matthew L. Baker et al.. Macromolecular structure determination using X-rays, neutrons and electrons: recent developments in <i>Phenix</i>. \emph{Acta Crystallographica Section D Structural Biology}, 2019. DOI:10.1107/s2059798319011471
+\bibitem{ref3} Sjors H. W. Scheres. RELION: Implementation of a Bayesian approach to cryo-EM structure determination. \emph{Journal of Structural Biology}, 2012. DOI:10.1016/j.jsb.2012.09.006
+\bibitem{ref4} Minkyung Baek, Frank DiMaio, Ivan Anishchenko et al.. Accurate prediction of protein structures and interactions using a three-track neural network. \emph{Science}, 2021. DOI:10.1126/science.abj8754
+\bibitem{ref5} Richard A. Henderson, J.M. Baldwin, T.A. Ceska et al.. Model for the structure of bacteriorhodopsin based on high-resolution electron cryo-microscopy. \emph{Journal of Molecular Biology}, 1990. DOI:10.1016/s0022-2836(05)80271-2
+\bibitem{ref6} Min‐Yi Shen, Andrej Šali. Statistical potential for assessment and prediction of protein structures. \emph{Protein Science}, 2006. DOI:10.1110/ps.062416606
+\bibitem{ref7} Anthony W. P. Fitzpatrick, Benjamin Falcon, Shaoda He et al.. Cryo-EM structures of tau filaments from Alzheimer’s disease. \emph{Nature}, 2017. DOI:10.1038/nature23002
+\bibitem{ref8} Justas Dauparas, Ivan Anishchenko, Nathaniel R. Bennett et al.. Robust deep learning–based protein sequence design using ProteinMPNN. \emph{Science}, 2022. DOI:10.1126/science.add2187
+\end{thebibliography}
+\end{document}

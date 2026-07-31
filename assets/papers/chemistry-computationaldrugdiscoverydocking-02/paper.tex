@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Computational Drug Discovery Docking under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Computational Drug Discovery Docking. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Computational Drug Discovery Docking is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Kitchen et al. (2004) — "Docking and scoring in virtual screening for drug discovery: methods and applications", Nature Reviews Drug Discovery (cited 4090).
+\item Ferreira et al. (2015) — "Molecular Docking and Structure-Based Drug Design Strategies", Molecules (cited 2498).
+\item Zoete et al. (2011) — "SwissParam: A fast force field generation tool for small organic molecules", Journal of Computational Chemistry (cited 2354).
+\item Sliwoski et al. (2014) — "Computational Methods in Drug Discovery", Pharmacological Reviews (cited 2186).
+\item Vilar et al. (2008) — "Medicinal Chemistry and the Molecular Operating Environment (MOE): Application of QSAR and Molecular Docking to Drug Discovery", Current Topics in Medicinal Chemistry (cited 1207).
+\item Agu et al. (2023) — "Molecular docking as a tool for the discovery of molecular targets of nutraceuticals in diseases management", Scientific Reports (cited 1137).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Computational Drug Discovery Docking and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Computational Drug Discovery Docking. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Douglas B. Kitchen, Hélène Decornez, John R. Furr et al.. Docking and scoring in virtual screening for drug discovery: methods and applications. \emph{Nature Reviews Drug Discovery}, 2004. DOI:10.1038/nrd1549
+\bibitem{ref2} Leonardo L. G. Ferreira, Ricardo Nascimento dos Santos, Glaucius Oliva et al.. Molecular Docking and Structure-Based Drug Design Strategies. \emph{Molecules}, 2015. DOI:10.3390/molecules200713384
+\bibitem{ref3} Vincent Zoete, Michel A. Cuendet, Aurélien Grosdidier et al.. SwissParam: A fast force field generation tool for small organic molecules. \emph{Journal of Computational Chemistry}, 2011. DOI:10.1002/jcc.21816
+\bibitem{ref4} Gregory Sliwoski, Sandeepkumar Kothiwale, Jens Meiler et al.. Computational Methods in Drug Discovery. \emph{Pharmacological Reviews}, 2014. DOI:10.1124/pr.112.007336
+\bibitem{ref5} Santiago Vilar, Giorgio Cozza, Stefano Moro. Medicinal Chemistry and the Molecular Operating Environment (MOE): Application of QSAR and Molecular Docking to Drug Discovery. \emph{Current Topics in Medicinal Chemistry}, 2008. DOI:10.2174/156802608786786624
+\bibitem{ref6} Peter Chinedu Agu, Celestine Azubuike Afiukwa, O.U. Orji et al.. Molecular docking as a tool for the discovery of molecular targets of nutraceuticals in diseases management. \emph{Scientific Reports}, 2023. DOI:10.1038/s41598-023-40160-2
+\bibitem{ref7} Pedro J. Ballester, John B. O. Mitchell. A machine learning approach to predicting protein–ligand binding affinity with applications to molecular docking. \emph{Bioinformatics}, 2010. DOI:10.1093/bioinformatics/btq112
+\bibitem{ref8} Aashish Manglik, Henry J. Lin, Dipendra K. Aryal et al.. Structure-based discovery of opioid analgesics with reduced side effects. \emph{Nature}, 2016. DOI:10.1038/nature19112
+\end{thebibliography}
+\end{document}

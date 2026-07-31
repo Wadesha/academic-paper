@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Pangenome Graph Reference under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Pangenome Graph Reference. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Pangenome Graph Reference is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Martin et al. (2022) — "Ensembl 2023", Nucleic Acids Research (cited 1109).
+\item Wang et al. (2022) — "The Human Pangenome Project: a global resource to map genomic diversity", Nature (cited 571).
+\item Zhou et al. (2022) — "Graph pangenome captures missing heritability and empowers tomato breeding", Nature (cited 537).
+\item Li et al. (2020) — "The design and construction of reference pangenome graphs with minigraph", Genome biology (cited 508).
+\item Sirén et al. (2021) — "Pangenomics enables genotyping of known structural variants in 5202 diverse genomes", Science (cited 423).
+\item Hickey et al. (2023) — "Pangenome graph construction from genome alignments with Minigraph-Cactus", Nature Biotechnology (cited 322).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Pangenome Graph Reference and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Pangenome Graph Reference. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Fergal J. Martin, M Ridwan Amode, Alisha Aneja et al.. Ensembl 2023. \emph{Nucleic Acids Research}, 2022. DOI:10.1093/nar/gkac958
+\bibitem{ref2} Ting Wang, Lucinda Antonacci-Fulton, Kerstin Howe et al.. The Human Pangenome Project: a global resource to map genomic diversity. \emph{Nature}, 2022. DOI:10.1038/s41586-022-04601-8
+\bibitem{ref3} Yao Zhou, Zhiyang Zhang, Zhigui Bao et al.. Graph pangenome captures missing heritability and empowers tomato breeding. \emph{Nature}, 2022. DOI:10.1038/s41586-022-04808-9
+\bibitem{ref4} Heng Li, Xiaowen Feng, Chong Chu. The design and construction of reference pangenome graphs with minigraph. \emph{Genome biology}, 2020. DOI:10.1186/s13059-020-02168-z
+\bibitem{ref5} Jouni Sirén, Jean Monlong, Xian Chang et al.. Pangenomics enables genotyping of known structural variants in 5202 diverse genomes. \emph{Science}, 2021. DOI:10.1126/science.abg8871
+\bibitem{ref6} Glenn Hickey, Jean Monlong, Jana Ebler et al.. Pangenome graph construction from genome alignments with Minigraph-Cactus. \emph{Nature Biotechnology}, 2023. DOI:10.1038/s41587-023-01793-w
+\bibitem{ref7} Erik Garrison, Zev Kronenberg, Eric T. Dawson et al.. A spectrum of free software tools for processing the VCF variant call format: vcflib, bio-vcf, cyvcf2, hts-nim and slivar. \emph{PLoS Computational Biology}, 2022. DOI:10.1371/journal.pcbi.1009123
+\bibitem{ref8} Erich D. Jarvis, Giulio Formenti, Arang Rhie et al.. Semi-automated assembly of high-quality diploid human reference genomes. \emph{Nature}, 2022. DOI:10.1038/s41586-022-05325-5
+\end{thebibliography}
+\end{document}

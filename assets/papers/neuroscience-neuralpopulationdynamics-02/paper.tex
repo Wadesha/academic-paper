@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Neural Population Dynamics under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Neural Population Dynamics. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Neural Population Dynamics is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Chen et al. (2013) — "Ultrasensitive fluorescent proteins for imaging neuronal activity", Nature (cited 7172).
+\item Strang (1968) — "On the Construction and Comparison of Difference Schemes", SIAM Journal on Numerical Analysis (cited 3509).
+\item Edelman (1987) — "Neural Darwinism: The Theory Of Neuronal Group Selection" (cited 2540).
+\item Grill‐Spector et al. (2005) — "Repetition and the brain: neural models of stimulus-specific effects", Trends in Cognitive Sciences (cited 2355).
+\item Mante et al. (2013) — "Context-dependent computation by recurrent dynamics in prefrontal cortex", Nature (cited 2096).
+\item Taniguchi et al. (2011) — "A Resource of Cre Driver Lines for Genetic Targeting of GABAergic Neurons in Cerebral Cortex", Neuron (cited 2055).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Neural Population Dynamics and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Neural Population Dynamics. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Tsai‐Wen Chen, Trevor J. Wardill, Yi Sun et al.. Ultrasensitive fluorescent proteins for imaging neuronal activity. \emph{Nature}, 2013. DOI:10.1038/nature12354
+\bibitem{ref2} Gilbert Strang. On the Construction and Comparison of Difference Schemes. \emph{SIAM Journal on Numerical Analysis}, 1968. DOI:10.1137/0705041
+\bibitem{ref3} Gerald M. Edelman. Neural Darwinism: The Theory Of Neuronal Group Selection. \emph{}, 1987. 
+\bibitem{ref4} Kalanit Grill‐Spector, Richard N. Henson, Alex Martin. Repetition and the brain: neural models of stimulus-specific effects. \emph{Trends in Cognitive Sciences}, 2005. DOI:10.1016/j.tics.2005.11.006
+\bibitem{ref5} Valerio Mante, David Sussillo, Krishna V. Shenoy et al.. Context-dependent computation by recurrent dynamics in prefrontal cortex. \emph{Nature}, 2013. DOI:10.1038/nature12742
+\bibitem{ref6} Hiroki Taniguchi, Miao He, Priscilla Wu et al.. A Resource of Cre Driver Lines for Genetic Targeting of GABAergic Neurons in Cerebral Cortex. \emph{Neuron}, 2011. DOI:10.1016/j.neuron.2011.07.026
+\bibitem{ref7} Carl van Vreeswijk, Haim Sompolinsky. Chaos in Neuronal Networks with Balanced Excitatory and Inhibitory Activity. \emph{Science}, 1996. DOI:10.1126/science.274.5293.1724
+\bibitem{ref8} V. A. Epanechnikov. Non-Parametric Estimation of a Multivariate Probability Density. \emph{Theory of Probability and Its Applications}, 1969. DOI:10.1137/1114019
+\end{thebibliography}
+\end{document}

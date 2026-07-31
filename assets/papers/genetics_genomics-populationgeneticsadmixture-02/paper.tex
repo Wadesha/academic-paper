@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Population Genetics Admixture under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Population Genetics Admixture. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Population Genetics Admixture is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Raj et al. (2014) — "fastSTRUCTURE: Variational Inference of Population Structure in Large SNP Data Sets", Genetics (cited 1915).
+\item Alexander et al. (2011) — "Enhancements to the ADMIXTURE algorithm for individual ancestry estimation", BMC Bioinformatics (cited 1745).
+\item Corander et al. (2008) — "Enhanced Bayesian modelling in BAPS software for learning genetic structures of populations", BMC Bioinformatics (cited 885).
+\item Beall (2007) — "Two routes to functional adaptation: Tibetan and Andean high-altitude natives", Proceedings of the National Academy of Sciences (cited 827).
+\item Skotte et al. (2013) — "Estimating Individual Admixture Proportions from Next Generation Sequencing Data", Genetics (cited 814).
+\item Meisner et al. (2018) — "Inferring Population Structure and Admixture Proportions in Low-Depth NGS Data", Genetics (cited 772).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Population Genetics Admixture and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Population Genetics Admixture. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Anil Raj, Matthew Stephens, Jonathan K. Pritchard. fastSTRUCTURE: Variational Inference of Population Structure in Large SNP Data Sets. \emph{Genetics}, 2014. DOI:10.1534/genetics.114.164350
+\bibitem{ref2} David H. Alexander, Kenneth Lange. Enhancements to the ADMIXTURE algorithm for individual ancestry estimation. \emph{BMC Bioinformatics}, 2011. DOI:10.1186/1471-2105-12-246
+\bibitem{ref3} Jukka Corander, Pekka Marttinen, Jukka Sirén et al.. Enhanced Bayesian modelling in BAPS software for learning genetic structures of populations. \emph{BMC Bioinformatics}, 2008. DOI:10.1186/1471-2105-9-539
+\bibitem{ref4} Cynthia M. Beall. Two routes to functional adaptation: Tibetan and Andean high-altitude natives. \emph{Proceedings of the National Academy of Sciences}, 2007. DOI:10.1073/pnas.0701985104
+\bibitem{ref5} Line Skotte, Thorfinn Sand Korneliussen, Anders Albrechtsen. Estimating Individual Admixture Proportions from Next Generation Sequencing Data. \emph{Genetics}, 2013. DOI:10.1534/genetics.113.154138
+\bibitem{ref6} Jonas Meisner, Anders Albrechtsen. Inferring Population Structure and Admixture Proportions in Low-Depth NGS Data. \emph{Genetics}, 2018. DOI:10.1534/genetics.118.301336
+\bibitem{ref7} Deepti Gurdasani, Tommy Carstensen, Fasil Tekola‐Ayele et al.. The African Genome Variation Project shapes medical genetics in Africa. \emph{Nature}, 2014. DOI:10.1038/nature13997
+\bibitem{ref8} Gil McVean. A Genealogical Interpretation of Principal Components Analysis. \emph{PLoS Genetics}, 2009. DOI:10.1371/journal.pgen.1000686
+\end{thebibliography}
+\end{document}

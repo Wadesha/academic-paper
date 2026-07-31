@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Scalable Ocean Heat Content Trend for Large-Scale Settings}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Ocean Heat Content Trend. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Ocean Heat Content Trend is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Workman et al. (2005) — "Major and trace element composition of the depleted MORB mantle (DMM)", Earth and Planetary Science Letters (cited 2913).
+\item Schott et al. (2009) — "Indian Ocean circulation and climate variability", Reviews of Geophysics (cited 1562).
+\item Levitus et al. (2012) — "World ocean heat content and thermosteric sea level change (0–2000 m), 1955–2010", Geophysical Research Letters (cited 1215).
+\item Balmaseda et al. (2012) — "Evaluation of the ECMWF ocean reanalysis system ORAS4", Quarterly Journal of the Royal Meteorological Society (cited 1050).
+\item Domingues et al. (2008) — "Improved estimates of upper-ocean warming and multi-decadal sea-level rise", Nature (cited 784).
+\item Levitus et al. (2009) — "Global ocean heat content 1955–2008 in light of recently revealed instrumentation problems", Geophysical Research Letters (cited 766).
+\end{itemize}
+
+\section{Method}
+We decompose the problem across shards with a communication-efficient aggregation rule that keeps overhead sublinear in scale. We instantiate this idea for Ocean Heat Content Trend and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Ocean Heat Content Trend. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} R. Workman, Stanley R. Hart. Major and trace element composition of the depleted MORB mantle (DMM). \emph{Earth and Planetary Science Letters}, 2005. DOI:10.1016/j.epsl.2004.12.005
+\bibitem{ref2} Friedrich Schott, Shang‐Ping Xie, Julian P. McCreary. Indian Ocean circulation and climate variability. \emph{Reviews of Geophysics}, 2009. DOI:10.1029/2007rg000245
+\bibitem{ref3} Sydney Levitus, John I. Antonov, Timothy P. Boyer et al.. World ocean heat content and thermosteric sea level change (0–2000 m), 1955–2010. \emph{Geophysical Research Letters}, 2012. DOI:10.1029/2012gl051106
+\bibitem{ref4} Magdalena Balmaseda, Kristian Mogensen, Anthony Weaver. Evaluation of the ECMWF ocean reanalysis system ORAS4. \emph{Quarterly Journal of the Royal Meteorological Society}, 2012. DOI:10.1002/qj.2063
+\bibitem{ref5} Catia M. Domingues, John Church, Neil J. White et al.. Improved estimates of upper-ocean warming and multi-decadal sea-level rise. \emph{Nature}, 2008. DOI:10.1038/nature07080
+\bibitem{ref6} Sydney Levitus, John I. Antonov, Timothy P. Boyer et al.. Global ocean heat content 1955–2008 in light of recently revealed instrumentation problems. \emph{Geophysical Research Letters}, 2009. DOI:10.1029/2008gl037155
+\bibitem{ref7} Sarah G. Purkey, Gregory C. Johnson. Warming of Global Abyssal and Deep Southern Ocean Waters between the 1990s and 2000s: Contributions to Global Heat and Sea Level Rise Budgets*. \emph{Journal of Climate}, 2010. DOI:10.1175/2010jcli3682.1
+\bibitem{ref8} Sunke Schmidtko, Karen J. Heywood, Andrew F. Thompson et al.. Multidecadal warming of Antarctic waters. \emph{Science}, 2014. DOI:10.1126/science.1256117
+\end{thebibliography}
+\end{document}

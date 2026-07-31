@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Scalable Brain Computer Interface Decoding for Large-Scale Settings}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Brain Computer Interface Decoding. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Brain Computer Interface Decoding is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Hochberg et al. (2006) — "Neuronal ensemble control of prosthetic devices by a human with tetraplegia", Nature (cited 3338).
+\item Hochberg et al. (2012) — "Reach and grasp by people with tetraplegia using a neurally controlled robotic arm", Nature (cited 2750).
+\item Epanechnikov (1969) — "Non-Parametric Estimation of a Multivariate Probability Density", Theory of Probability and Its Applications (cited 1838).
+\item Willett et al. (2021) — "High-performance brain-to-text communication via handwriting", Nature (cited 968).
+\item Abiri et al. (2018) — "A comprehensive review of EEG-based brain–computer interface paradigms", Journal of Neural Engineering (cited 955).
+\item O’Sullivan et al. (2014) — "Attentional Selection in a Cocktail Party Environment Can Be Decoded from Single-Trial EEG", Cerebral Cortex (cited 924).
+\end{itemize}
+
+\section{Method}
+We decompose the problem across shards with a communication-efficient aggregation rule that keeps overhead sublinear in scale. We instantiate this idea for Brain Computer Interface Decoding and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Brain Computer Interface Decoding. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Leigh R. Hochberg, Mijail D. Serruya, Gerhard M. Friehs et al.. Neuronal ensemble control of prosthetic devices by a human with tetraplegia. \emph{Nature}, 2006. DOI:10.1038/nature04970
+\bibitem{ref2} Leigh R. Hochberg, Daniel Bacher, Beata Jarosiewicz et al.. Reach and grasp by people with tetraplegia using a neurally controlled robotic arm. \emph{Nature}, 2012. DOI:10.1038/nature11076
+\bibitem{ref3} V. A. Epanechnikov. Non-Parametric Estimation of a Multivariate Probability Density. \emph{Theory of Probability and Its Applications}, 1969. DOI:10.1137/1114019
+\bibitem{ref4} Francis R. Willett, Donald T. Avansino, Leigh R. Hochberg et al.. High-performance brain-to-text communication via handwriting. \emph{Nature}, 2021. DOI:10.1038/s41586-021-03506-2
+\bibitem{ref5} Reza Abiri, Soheil Borhani, Eric W. Sellers et al.. A comprehensive review of EEG-based brain–computer interface paradigms. \emph{Journal of Neural Engineering}, 2018. DOI:10.1088/1741-2552/aaf12e
+\bibitem{ref6} James O’Sullivan, Alan J. Power, Nima Mesgarani et al.. Attentional Selection in a Cocktail Party Environment Can Be Decoded from Single-Trial EEG. \emph{Cerebral Cortex}, 2014. DOI:10.1093/cercor/bht355
+\bibitem{ref7} Thorsten O. Zander, Christian Kothe. Towards passive brain–computer interfaces: applying brain–computer interface technology to human–machine systems in general. \emph{Journal of Neural Engineering}, 2011. DOI:10.1088/1741-2560/8/2/025005
+\bibitem{ref8} Tijl Grootswagers, Susan G. Wardle, Thomas A. Carlson. Decoding Dynamic Brain Patterns from Evoked Responses: A Tutorial on Multivariate Pattern Analysis Applied to Time Series Neuroimaging Data. \emph{Journal of Cognitive Neuroscience}, 2016. DOI:10.1162/jocn\_a\_01068
+\end{thebibliography}
+\end{document}

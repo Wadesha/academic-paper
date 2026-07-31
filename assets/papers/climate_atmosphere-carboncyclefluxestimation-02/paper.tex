@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Carbon Cycle Flux Estimation under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Carbon Cycle Flux Estimation. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Carbon Cycle Flux Estimation is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Haywood et al. (2000) — "Estimates of the direct and indirect radiative forcing due to tropospheric aerosols: A review", Reviews of Geophysics (cited 2304).
+\item Prior work (2018) — "Handbook of Methods in Aquatic Microbial Ecology" (cited 1452).
+\item Saunois et al. (2016) — "The global methane budget 2000–2012", Earth system science data (cited 1109).
+\item Litton et al. (2007) — "Carbon allocation in forest ecosystems", Global Change Biology (cited 1080).
+\item Zhang et al. (2019) — "Coupled estimation of 500 m and 8-day resolution global evapotranspiration and gross primary production in 2002–2017", Remote Sensing of Environment (cited 929).
+\item Sun et al. (2017) — "OCO-2 advances photosynthesis observation from space via solar-induced chlorophyll fluorescence", Science (cited 718).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Carbon Cycle Flux Estimation and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Carbon Cycle Flux Estimation. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Jim Haywood, Oliviér Boucher. Estimates of the direct and indirect radiative forcing due to tropospheric aerosols: A review. \emph{Reviews of Geophysics}, 2000. DOI:10.1029/1999rg000078
+\bibitem{ref2} . Handbook of Methods in Aquatic Microbial Ecology. \emph{}, 2018. DOI:10.1201/9780203752746
+\bibitem{ref3} Marielle Saunois, Philippe Bousquet, Benjamin Poulter et al.. The global methane budget 2000–2012. \emph{Earth system science data}, 2016. DOI:10.5194/essd-8-697-2016
+\bibitem{ref4} Creighton M. Litton, James W. Raich, Michael G. Ryan. Carbon allocation in forest ecosystems. \emph{Global Change Biology}, 2007. DOI:10.1111/j.1365-2486.2007.01420.x
+\bibitem{ref5} Yongqiang Zhang, Dongdong Kong, Rong Gan et al.. Coupled estimation of 500 m and 8-day resolution global evapotranspiration and gross primary production in 2002–2017. \emph{Remote Sensing of Environment}, 2019. DOI:10.1016/j.rse.2018.12.031
+\bibitem{ref6} Ying Sun, Christian Frankenberg, Jeffrey D. Wood et al.. OCO-2 advances photosynthesis observation from space via solar-induced chlorophyll fluorescence. \emph{Science}, 2017. DOI:10.1126/science.aam5747
+\bibitem{ref7} Shane D. Schoepfer, Jun Shen, Hengye Wei et al.. Total organic carbon, organic phosphorus, and biogenic barium fluxes as proxies for paleomarine productivity. \emph{Earth-Science Reviews}, 2014. DOI:10.1016/j.earscirev.2014.08.017
+\bibitem{ref8} Riccardo Valentini, Daniel Epron, Paolo De Angelis et al.. <i>In situ</i> estimation of net CO<sup>2</sup> assimilation, photosynthetic electron flow and photorespiration in Turkey oak (<i>Q. cerris</i> L.) leaves: diurnal cycles under different levels of water supply. \emph{Plant Cell \& Environment}, 1995. DOI:10.1111/j.1365-3040.1995.tb00564.x
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Scalable Protein Structure Prediction Deep Learning for Large-Scale Settings}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Protein Structure Prediction Deep Learning. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Protein Structure Prediction Deep Learning is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Jumper et al. (2021) — "Highly accurate protein structure prediction with AlphaFold", Nature (cited 46082).
+\item Abramson et al. (2024) — "Accurate structure prediction of biomolecular interactions with AlphaFold 3", Nature (cited 14666).
+\item Senior et al. (2020) — "Improved protein structure prediction using potentials from deep learning", Nature (cited 3565).
+\item Rives et al. (2021) — "Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences", Proceedings of the National Academy of Sciences (cited 3246).
+\item Watson et al. (2023) — "De novo design of protein structure and function with RFdiffusion", Nature (cited 2075).
+\item Dauparas et al. (2022) — "Robust deep learning–based protein sequence design using ProteinMPNN", Science (cited 1946).
+\end{itemize}
+
+\section{Method}
+We decompose the problem across shards with a communication-efficient aggregation rule that keeps overhead sublinear in scale. We instantiate this idea for Protein Structure Prediction Deep Learning and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Protein Structure Prediction Deep Learning. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} John Jumper, Richard Evans, Alexander Pritzel et al.. Highly accurate protein structure prediction with AlphaFold. \emph{Nature}, 2021. DOI:10.1038/s41586-021-03819-2
+\bibitem{ref2} Josh Abramson, Jonas Adler, Jack Dunger et al.. Accurate structure prediction of biomolecular interactions with AlphaFold 3. \emph{Nature}, 2024. DOI:10.1038/s41586-024-07487-w
+\bibitem{ref3} Andrew Senior, Richard Evans, John Jumper et al.. Improved protein structure prediction using potentials from deep learning. \emph{Nature}, 2020. DOI:10.1038/s41586-019-1923-7
+\bibitem{ref4} Alexander Rives, Joshua Meier, Tom Sercu et al.. Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences. \emph{Proceedings of the National Academy of Sciences}, 2021. DOI:10.1073/pnas.2016239118
+\bibitem{ref5} Joseph L. Watson, David Juergens, Nathaniel R. Bennett et al.. De novo design of protein structure and function with RFdiffusion. \emph{Nature}, 2023. DOI:10.1038/s41586-023-06415-8
+\bibitem{ref6} Justas Dauparas, Ivan Anishchenko, Nathaniel R. Bennett et al.. Robust deep learning–based protein sequence design using ProteinMPNN. \emph{Science}, 2022. DOI:10.1126/science.add2187
+\bibitem{ref7} Hakime Öztürk, Arzucan Özgür, Elif Özkırımlı. DeepDTA: deep drug–target binding affinity prediction. \emph{Bioinformatics}, 2018. DOI:10.1093/bioinformatics/bty593
+\bibitem{ref8} Jianyi Yang, Ivan Anishchenko, Hahnbeom Park et al.. Improved protein structure prediction using predicted interresidue orientations. \emph{Proceedings of the National Academy of Sciences}, 2020. DOI:10.1073/pnas.1914677117
+\end{thebibliography}
+\end{document}

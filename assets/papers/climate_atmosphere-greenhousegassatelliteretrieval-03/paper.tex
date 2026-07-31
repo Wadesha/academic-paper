@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Scalable Greenhouse Gas Satellite Retrieval for Large-Scale Settings}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Greenhouse Gas Satellite Retrieval. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Greenhouse Gas Satellite Retrieval is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Inness et al. (2019) — "The CAMS reanalysis of atmospheric composition", Atmospheric chemistry and physics (cited 1428).
+\item Yokota et al. (2009) — "Global Concentrations of CO2 and CH4 Retrieved from GOSAT: First Preliminary Results", SOLA (cited 737).
+\item Joiner et al. (2013) — "Global monitoring of terrestrial chlorophyll fluorescence from moderate-spectral-resolution near-infrared satellite measurements: methodology, simulations, and application to GOME-2", Atmospheric measurement techniques (cited 688).
+\item O’Dell et al. (2012) — "The ACOS CO <sub>2</sub> retrieval algorithm – Part 1: Description and validation against synthetic observations", Atmospheric measurement techniques (cited 662).
+\item Butz et al. (2011) — "Toward accurate CO<sub>2</sub>and CH<sub>4</sub>observations from GOSAT", Geophysical Research Letters (cited 626).
+\item Guanter et al. (2012) — "Retrieval and global assessment of terrestrial chlorophyll fluorescence from GOSAT space measurements", Remote Sensing of Environment (cited 591).
+\end{itemize}
+
+\section{Method}
+We decompose the problem across shards with a communication-efficient aggregation rule that keeps overhead sublinear in scale. We instantiate this idea for Greenhouse Gas Satellite Retrieval and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Greenhouse Gas Satellite Retrieval. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Antje Inness, Melanie Ades, Anna Agustí‐Panareda et al.. The CAMS reanalysis of atmospheric composition. \emph{Atmospheric chemistry and physics}, 2019. DOI:10.5194/acp-19-3515-2019
+\bibitem{ref2} Tatsuya Yokota, Yukio Yoshida, N. Eguchi et al.. Global Concentrations of CO2 and CH4 Retrieved from GOSAT: First Preliminary Results. \emph{SOLA}, 2009. DOI:10.2151/sola.2009-041
+\bibitem{ref3} Joanna Joiner, Luis Guanter, R. Lindstrot et al.. Global monitoring of terrestrial chlorophyll fluorescence from moderate-spectral-resolution near-infrared satellite measurements: methodology, simulations, and application to GOME-2. \emph{Atmospheric measurement techniques}, 2013. DOI:10.5194/amt-6-2803-2013
+\bibitem{ref4} C. O’Dell, B. J. Connor, Hartmut Bösch et al.. The ACOS CO <sub>2</sub> retrieval algorithm – Part 1: Description and validation against synthetic observations. \emph{Atmospheric measurement techniques}, 2012. DOI:10.5194/amt-5-99-2012
+\bibitem{ref5} A. Butz, Sandrine Guerlet, Otto Hasekamp et al.. Toward accurate CO<sub>2</sub>and CH<sub>4</sub>observations from GOSAT. \emph{Geophysical Research Letters}, 2011. DOI:10.1029/2011gl047888
+\bibitem{ref6} Luis Guanter, Christian Frankenberg, A. Dudhia et al.. Retrieval and global assessment of terrestrial chlorophyll fluorescence from GOSAT space measurements. \emph{Remote Sensing of Environment}, 2012. DOI:10.1016/j.rse.2012.02.006
+\bibitem{ref7} Jennifer D. Watts, John S. Kimball, Annett Bartsch et al.. Surface water inundation in the boreal-Arctic: potential impacts on regional methane emissions. \emph{Environmental Research Letters}, 2014. DOI:10.1088/1748-9326/9/7/075001
+\bibitem{ref8} Antje Inness, F. W. Baier, Angela Benedetti et al.. The MACC reanalysis: an 8 yr data set of atmospheric composition. \emph{Atmospheric chemistry and physics}, 2013. DOI:10.5194/acp-13-4073-2013
+\end{thebibliography}
+\end{document}

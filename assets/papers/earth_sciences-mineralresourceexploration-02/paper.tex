@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Mineral Resource Exploration under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Mineral Resource Exploration. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Mineral Resource Exploration is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Glover et al. (1997) — "Tabu Search" (cited 5713).
+\item Prior work (2011) — "An Introduction to Applied and Environmental Geophysics", Preview (cited 2692).
+\item Epanechnikov (1969) — "Non-Parametric Estimation of a Multivariate Probability Density", Theory of Probability and Its Applications (cited 1838).
+\item Kesler et al. (2012) — "Global lithium resources: Relative importance of pegmatite, brine and other deposits", Ore Geology Reviews (cited 1106).
+\item Zou et al. (2010) — "Geological characteristics and resource potential of shale gas in China", Petroleum Exploration and Development (cited 1099).
+\item Ali et al. (2017) — "Mineral supply for sustainable development requires resource governance", Nature (cited 766).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Mineral Resource Exploration and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Mineral Resource Exploration. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Fred Glover, Manuel Laguna. Tabu Search. \emph{}, 1997. 
+\bibitem{ref2} . An Introduction to Applied and Environmental Geophysics. \emph{Preview}, 2011. DOI:10.1071/pvv2011n155other
+\bibitem{ref3} V. A. Epanechnikov. Non-Parametric Estimation of a Multivariate Probability Density. \emph{Theory of Probability and Its Applications}, 1969. DOI:10.1137/1114019
+\bibitem{ref4} Stephen E. Kesler, Paul W. Gruber, Pablo A. Medina et al.. Global lithium resources: Relative importance of pegmatite, brine and other deposits. \emph{Ore Geology Reviews}, 2012. DOI:10.1016/j.oregeorev.2012.05.006
+\bibitem{ref5} Caineng Zou, Dazhong Dong, Shejiao Wang et al.. Geological characteristics and resource potential of shale gas in China. \emph{Petroleum Exploration and Development}, 2010. DOI:10.1016/s1876-3804(11)60001-3
+\bibitem{ref6} Saleem H. Ali, Damien Giurco, Nicholas Arndt et al.. Mineral supply for sustainable development requires resource governance. \emph{Nature}, 2017. DOI:10.1038/nature21359
+\bibitem{ref7} Parmeggiani, Luigi. Encyclopaedia of occupational health and safety. \emph{Choice Reviews Online}, 1998. DOI:10.5860/choice.36-1334
+\bibitem{ref8} Vladimir Litvinenko. Digital Economy as a Factor in the Technological Development of the Mineral Sector. \emph{Natural Resources Research}, 2019. DOI:10.1007/s11053-019-09568-4
+\end{thebibliography}
+\end{document}

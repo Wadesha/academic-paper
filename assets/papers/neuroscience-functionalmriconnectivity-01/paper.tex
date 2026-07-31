@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Efficient Functional Mri Connectivity: A Resource-Aware Approach}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Functional Mri Connectivity. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Functional Mri Connectivity is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Biswal et al. (1995) — "Functional connectivity in the motor cortex of resting human brain using echo‐planar mri", Magnetic Resonance in Medicine (cited 10134).
+\item Yeo et al. (2011) — "The organization of the human cerebral cortex estimated by intrinsic functional connectivity", Journal of Neurophysiology (cited 9934).
+\item Buckner et al. (2011) — "The organization of the human cerebellum estimated by intrinsic functional connectivity", Journal of Neurophysiology (cited 7910).
+\item Power et al. (2011) — "Spurious but systematic correlations in functional connectivity MRI networks arise from subject motion", NeuroImage (cited 7910).
+\item Seeley et al. (2007) — "Dissociable Intrinsic Connectivity Networks for Salience Processing and Executive Control", Journal of Neuroscience (cited 7583).
+\item Power et al. (2011) — "Functional Network Organization of the Human Brain", Neuron (cited 4451).
+\end{itemize}
+
+\section{Method}
+We reduce the dominant computational cost via adaptive resource allocation, activating only the components needed per input. We instantiate this idea for Functional Mri Connectivity and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Functional Mri Connectivity. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Bharat B. Biswal, F. Zerrin Yetkin, Victor M. Haughton et al.. Functional connectivity in the motor cortex of resting human brain using echo‐planar mri. \emph{Magnetic Resonance in Medicine}, 1995. DOI:10.1002/mrm.1910340409
+\bibitem{ref2} B.T. Thomas Yeo, Fenna M. Krienen, Jorge Sepulcre et al.. The organization of the human cerebral cortex estimated by intrinsic functional connectivity. \emph{Journal of Neurophysiology}, 2011. DOI:10.1152/jn.00338.2011
+\bibitem{ref3} Randy L. Buckner, Fenna M. Krienen, Angela Castellanos et al.. The organization of the human cerebellum estimated by intrinsic functional connectivity. \emph{Journal of Neurophysiology}, 2011. DOI:10.1152/jn.00339.2011
+\bibitem{ref4} Jonathan D. Power, Kelly A. Barnes, Abraham Z. Snyder et al.. Spurious but systematic correlations in functional connectivity MRI networks arise from subject motion. \emph{NeuroImage}, 2011. DOI:10.1016/j.neuroimage.2011.10.018
+\bibitem{ref5} William W. Seeley, Vinod Menon, Alan F. Schatzberg et al.. Dissociable Intrinsic Connectivity Networks for Salience Processing and Executive Control. \emph{Journal of Neuroscience}, 2007. DOI:10.1523/jneurosci.5587-06.2007
+\bibitem{ref6} Jonathan D. Power, Alexander L. Cohen, Steven M. Nelson et al.. Functional Network Organization of the Human Brain. \emph{Neuron}, 2011. DOI:10.1016/j.neuron.2011.09.006
+\bibitem{ref7} Jessica S. Damoiseaux, Serge A.R.B. Rombouts, Frederik Barkhof et al.. Consistent resting-state networks across healthy subjects. \emph{Proceedings of the National Academy of Sciences}, 2006. DOI:10.1073/pnas.0601417103
+\bibitem{ref8} Alexander Schaefer, Ru Kong, Evan M. Gordon et al.. Local-Global Parcellation of the Human Cerebral Cortex from Intrinsic Functional Connectivity MRI. \emph{Cerebral Cortex}, 2017. DOI:10.1093/cercor/bhx179
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Geomagnetic Field Modeling under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Geomagnetic Field Modeling. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Geomagnetic Field Modeling is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Mandelbrot et al. (1968) — "Fractional Brownian Motions, Fractional Noises and Applications", SIAM Review (cited 7723).
+\item Gosse et al. (2001) — "Terrestrial in situ cosmogenic nuclides: theory and application", Quaternary Science Reviews (cited 2069).
+\item Parker (1955) — "Hydromagnetic Dynamo Models.", The Astrophysical Journal (cited 2019).
+\item Thébault et al. (2015) — "International Geomagnetic Reference Field: the 12th generation", Earth Planets and Space (cited 1559).
+\item Burton et al. (1975) — "An empirical relationship between interplanetary conditions and<i>Dst</i>", Journal of Geophysical Research Atmospheres (cited 1441).
+\item McPherron et al. (1973) — "Satellite studies of magnetospheric substorms on August 15, 1968: 9. Phenomenological model for substorms", Journal of Geophysical Research Atmospheres (cited 1272).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Geomagnetic Field Modeling and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Geomagnetic Field Modeling. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Benoît B. Mandelbrot, John W. Van Ness. Fractional Brownian Motions, Fractional Noises and Applications. \emph{SIAM Review}, 1968. DOI:10.1137/1010093
+\bibitem{ref2} John Gosse, Fred M. Phillips. Terrestrial in situ cosmogenic nuclides: theory and application. \emph{Quaternary Science Reviews}, 2001. DOI:10.1016/s0277-3791(00)00171-2
+\bibitem{ref3} E. N. Parker. Hydromagnetic Dynamo Models.. \emph{The Astrophysical Journal}, 1955. DOI:10.1086/146087
+\bibitem{ref4} Erwan Thébault, Christopher C. Finlay, Ciarán Beggan et al.. International Geomagnetic Reference Field: the 12th generation. \emph{Earth Planets and Space}, 2015. DOI:10.1186/s40623-015-0228-9
+\bibitem{ref5} Rande K. Burton, R. L. McPherron, C. T. Russell. An empirical relationship between interplanetary conditions and<i>Dst</i>. \emph{Journal of Geophysical Research Atmospheres}, 1975. DOI:10.1029/ja080i031p04204
+\bibitem{ref6} R. L. McPherron, C. T. Russell, M. P. Aubry. Satellite studies of magnetospheric substorms on August 15, 1968: 9. Phenomenological model for substorms. \emph{Journal of Geophysical Research Atmospheres}, 1973. DOI:10.1029/ja078i016p03131
+\bibitem{ref7} Christopher C. Finlay, S. Maus, Ciarán Beggan et al.. International Geomagnetic Reference Field: the eleventh generation. \emph{Geophysical Journal International}, 2010. DOI:10.1111/j.1365-246x.2010.04804.x
+\bibitem{ref8} Thorsten Ritz, Salih Adem, Klaus Schulten. A Model for Photoreceptor-Based Magnetoreception in Birds. \emph{Biophysical Journal}, 2000. DOI:10.1016/s0006-3495(00)76629-x
+\end{thebibliography}
+\end{document}

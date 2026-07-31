@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Confidential Computing Enclave under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Confidential Computing Enclave. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Confidential Computing Enclave is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Arnautov et al. (2016) — "SCONE: secure Linux containers with Intel SGX", Operating Systems Design and Implementation (cited 461).
+\item Priebe et al. (2018) — "EnclaveDB: A Secure Database Using SGX" (cited 284).
+\item Sinha et al. (2015) — "Moat" (cited 101).
+\item Lind et al. (2017) — "Glamdring: automatic application partitioning for intel SGX", Spiral (Imperial College London) (cited 97).
+\item Tramèr et al. (2017) — "Sealed-Glass Proofs: Using Transparent Enclaves to Prove and Sell Knowledge" (cited 84).
+\item Zhu et al. (2020) — "Enabling Rack-scale Confidential Computing using Heterogeneous Trusted Execution Environment" (cited 83).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Confidential Computing Enclave and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Confidential Computing Enclave. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Sergei Arnautov, Bohdan Trach, Franz Gregor et al.. SCONE: secure Linux containers with Intel SGX. \emph{Operating Systems Design and Implementation}, 2016. DOI:10.5555/3026877.3026930
+\bibitem{ref2} Christian Priebe, Kapil Vaswani, Manuel Costa. EnclaveDB: A Secure Database Using SGX. \emph{}, 2018. DOI:10.1109/sp.2018.00025
+\bibitem{ref3} Rohit Sinha, Sriram K. Rajamani, Sanjit A. Seshia et al.. Moat. \emph{}, 2015. DOI:10.1145/2810103.2813608
+\bibitem{ref4} Joshua Lind, Christian Priebe, Divya Muthukumaran et al.. Glamdring: automatic application partitioning for intel SGX. \emph{Spiral (Imperial College London)}, 2017. 
+\bibitem{ref5} Florian Tramèr, Fan Zhang, Huang Lin et al.. Sealed-Glass Proofs: Using Transparent Enclaves to Prove and Sell Knowledge. \emph{}, 2017. DOI:10.1109/eurosp.2017.28
+\bibitem{ref6} Jianping Zhu, Rui Hou, XiaoFeng Wang et al.. Enabling Rack-scale Confidential Computing using Heterogeneous Trusted Execution Environment. \emph{}, 2020. DOI:10.1109/sp40000.2020.00054
+\bibitem{ref7} Marcus Brandenburger, Christian Cachin, Rüdiger Kapitza et al.. Trusted Computing Meets Blockchain: Rollback Attacks and a Solution for Hyperledger Fabric. \emph{}, 2019. DOI:10.1109/srds47363.2019.00045
+\bibitem{ref8} mark-russinovich, edward-ashton, christine-avanessians et al.. CCF: A Framework for Building Confidential Verifiable Replicated Services. \emph{}, 2019. 
+\end{thebibliography}
+\end{document}

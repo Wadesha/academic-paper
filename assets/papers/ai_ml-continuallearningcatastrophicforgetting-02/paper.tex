@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Continual Learning Catastrophic Forgetting under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Continual Learning Catastrophic Forgetting. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Continual Learning Catastrophic Forgetting is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Parisi et al. (2019) — "Continual lifelong learning with neural networks: A review", Neural Networks (cited 3060).
+\item Delange et al. (2021) — "A continual learning survey: Defying forgetting in classification tasks", IEEE Transactions on Pattern Analysis and Machine Intelligence (cited 1611).
+\item Wang et al. (2024) — "A Comprehensive Survey of Continual Learning: Theory, Method and Application", IEEE Transactions on Pattern Analysis and Machine Intelligence (cited 847).
+\item Wang et al. (2022) — "Learning to Prompt for Continual Learning", 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) (cited 675).
+\item Ven et al. (2019) — "Three scenarios for continual learning", Lirias (cited 557).
+\item Zhao et al. (2020) — "Maintaining Discrimination and Fairness in Class Incremental Learning" (cited 475).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Continual Learning Catastrophic Forgetting and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Continual Learning Catastrophic Forgetting. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} German I. Parisi, Ronald Kemker, Jose L. Part et al.. Continual lifelong learning with neural networks: A review. \emph{Neural Networks}, 2019. DOI:10.1016/j.neunet.2019.01.012
+\bibitem{ref2} Matthias Delange, Rahaf Aljundi, Marc Masana et al.. A continual learning survey: Defying forgetting in classification tasks. \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, 2021. DOI:10.1109/tpami.2021.3057446
+\bibitem{ref3} Liyuan Wang, Xingxing Zhang, Hang Su et al.. A Comprehensive Survey of Continual Learning: Theory, Method and Application. \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, 2024. DOI:10.1109/tpami.2024.3367329
+\bibitem{ref4} Zifeng Wang, Zizhao Zhang, Chen‐Yu Lee et al.. Learning to Prompt for Continual Learning. \emph{2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 2022. DOI:10.1109/cvpr52688.2022.00024
+\bibitem{ref5} Gido M. van de Ven, Andreas S. Tolias. Three scenarios for continual learning. \emph{Lirias}, 2019. DOI:10.48550/arxiv.1904.07734
+\bibitem{ref6} Bowen Zhao, Xi Xiao, Guojun Gan et al.. Maintaining Discrimination and Fairness in Class Incremental Learning. \emph{}, 2020. DOI:10.1109/cvpr42600.2020.01322
+\bibitem{ref7} Gido M. van de Ven, Hava T. Siegelmann, Andreas S. Tolias. Brain-inspired replay for continual learning with artificial neural networks. \emph{Nature Communications}, 2020. DOI:10.1038/s41467-020-17866-2
+\bibitem{ref8} Zifeng Wang, Zizhao Zhang, Sayna Ebrahimi et al.. DualPrompt: Complementary Prompting for Rehearsal-Free Continual Learning. \emph{Lecture notes in computer science}, 2022. DOI:10.1007/978-3-031-19809-0\_36
+\end{thebibliography}
+\end{document}

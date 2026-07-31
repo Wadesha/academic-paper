@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Scalable Computational Model Spiking Network for Large-Scale Settings}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Computational Model Spiking Network. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Computational Model Spiking Network is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Davies et al. (2018) — "Loihi: A Neuromorphic Manycore Processor with On-Chip Learning", IEEE Micro (cited 3798).
+\item Gerstner et al. (2002) — "Spiking Neuron Models", Cambridge University Press eBooks (cited 3037).
+\item Izhikevich (2004) — "Which Model to Use for Cortical Spiking Neurons?", IEEE Transactions on Neural Networks (cited 2578).
+\item Shadlen et al. (1998) — "The Variable Discharge of Cortical Neurons: Implications for Connectivity, Computation, and Information Coding", Journal of Neuroscience (cited 2303).
+\item Yamins et al. (2014) — "Performance-optimized hierarchical models predict neural responses in higher visual cortex", Proceedings of the National Academy of Sciences (cited 2153).
+\item Koch (1998) — "Biophysics of Computation", Oxford University Press eBooks (cited 2070).
+\end{itemize}
+
+\section{Method}
+We decompose the problem across shards with a communication-efficient aggregation rule that keeps overhead sublinear in scale. We instantiate this idea for Computational Model Spiking Network and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Computational Model Spiking Network. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Mike Davies, Narayan Srinivasa, Tsung-Han Lin et al.. Loihi: A Neuromorphic Manycore Processor with On-Chip Learning. \emph{IEEE Micro}, 2018. DOI:10.1109/mm.2018.112130359
+\bibitem{ref2} Wulfram Gerstner, Werner M. Kistler. Spiking Neuron Models. \emph{Cambridge University Press eBooks}, 2002. DOI:10.1017/cbo9780511815706
+\bibitem{ref3} Eugene M. Izhikevich. Which Model to Use for Cortical Spiking Neurons?. \emph{IEEE Transactions on Neural Networks}, 2004. DOI:10.1109/tnn.2004.832719
+\bibitem{ref4} Michael N. Shadlen, William T. Newsome. The Variable Discharge of Cortical Neurons: Implications for Connectivity, Computation, and Information Coding. \emph{Journal of Neuroscience}, 1998. DOI:10.1523/jneurosci.18-10-03870.1998
+\bibitem{ref5} Daniel Yamins, Ha Hong, Charles F. Cadieu et al.. Performance-optimized hierarchical models predict neural responses in higher visual cortex. \emph{Proceedings of the National Academy of Sciences}, 2014. DOI:10.1073/pnas.1403112111
+\bibitem{ref6} Christof Koch. Biophysics of Computation. \emph{Oxford University Press eBooks}, 1998. DOI:10.1093/oso/9780195104912.001.0001
+\bibitem{ref7} Xiao‐Jing Wang. Neurophysiological and Computational Principles of Cortical Rhythms in Cognition. \emph{Physiological Reviews}, 2010. DOI:10.1152/physrev.00035.2008
+\bibitem{ref8} Wulfram Gerstner, Werner M. Kistler. Spiking Neuron Models: Single Neurons, Populations, Plasticity. \emph{}, 2002. DOI:10.1017/cbo9780511815706
+\end{thebibliography}
+\end{document}

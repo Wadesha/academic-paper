@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Polygenic Risk Score Prediction under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Polygenic Risk Score Prediction. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Polygenic Risk Score Prediction is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Khera et al. (2018) — "Genome-wide polygenic scores for common diseases identify individuals with risk equivalent to monogenic mutations", Nature Genetics (cited 3143).
+\item Ge et al. (2019) — "Polygenic prediction via Bayesian regression and continuous shrinkage priors", Nature Communications (cited 2025).
+\item Torkamani et al. (2018) — "The personal and clinical utility of polygenic risk scores", Nature Reviews Genetics (cited 1762).
+\item Dudbridge (2013) — "Power and Predictive Accuracy of Polygenic Risk Scores", PLoS Genetics (cited 1658).
+\item Michailidou et al. (2017) — "Association analysis identifies 65 new breast cancer risk loci", Nature (cited 1599).
+\item Martin et al. (2017) — "Human Demographic History Impacts Genetic Risk Prediction across Diverse Populations", The American Journal of Human Genetics (cited 1583).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Polygenic Risk Score Prediction and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Polygenic Risk Score Prediction. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Amit V. Khera, Mark Chaffin, Krishna G. Aragam et al.. Genome-wide polygenic scores for common diseases identify individuals with risk equivalent to monogenic mutations. \emph{Nature Genetics}, 2018. DOI:10.1038/s41588-018-0183-z
+\bibitem{ref2} Tian Ge, Chia‐Yen Chen, Yang Ni et al.. Polygenic prediction via Bayesian regression and continuous shrinkage priors. \emph{Nature Communications}, 2019. DOI:10.1038/s41467-019-09718-5
+\bibitem{ref3} Ali Torkamani, Nathan E. Wineinger, Eric J. Topol. The personal and clinical utility of polygenic risk scores. \emph{Nature Reviews Genetics}, 2018. DOI:10.1038/s41576-018-0018-x
+\bibitem{ref4} Frank Dudbridge. Power and Predictive Accuracy of Polygenic Risk Scores. \emph{PLoS Genetics}, 2013. DOI:10.1371/journal.pgen.1003348
+\bibitem{ref5} Kyriaki Michailidou, Sara Lindström, Joe Dennis et al.. Association analysis identifies 65 new breast cancer risk loci. \emph{Nature}, 2017. DOI:10.1038/nature24284
+\bibitem{ref6} Alicia R. Martin, Christopher R. Gignoux, Raymond K. Walters et al.. Human Demographic History Impacts Genetic Risk Prediction across Diverse Populations. \emph{The American Journal of Human Genetics}, 2017. DOI:10.1016/j.ajhg.2017.03.004
+\bibitem{ref7} Nasim Mavaddat, Kyriaki Michailidou, Joe Dennis et al.. Polygenic Risk Scores for Prediction of Breast Cancer and Breast Cancer Subtypes. \emph{The American Journal of Human Genetics}, 2018. DOI:10.1016/j.ajhg.2018.11.002
+\bibitem{ref8} Daifeng Wang, Shuang Liu, Jonathan Warrell et al.. Comprehensive functional genomic resource and integrative model for the human brain. \emph{Science}, 2018. DOI:10.1126/science.aat8464
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Efficient Remote Sensing Land Surface: A Resource-Aware Approach}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Remote Sensing Land Surface. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Remote Sensing Land Surface is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Hijmans et al. (2005) — "Very high resolution interpolated climate surfaces for global land areas", International Journal of Climatology (cited 20180).
+\item Friedl et al. (2009) — "MODIS Collection 5 global land cover: Algorithm refinements and characterization of new datasets", Remote Sensing of Environment (cited 3594).
+\item Lu et al. (2004) — "Change detection techniques", International Journal of Remote Sensing (cited 3213).
+\item Vermote et al. (1997) — "Second Simulation of the Satellite Signal in the Solar Spectrum, 6S: an overview", IEEE Transactions on Geoscience and Remote Sensing (cited 3199).
+\item Bastiaanssen et al. (1998) — "A remote sensing surface energy balance algorithm for land (SEBAL). 1. Formulation", Journal of Hydrology (cited 3135).
+\item Voogt et al. (2003) — "Thermal remote sensing of urban climates", Remote Sensing of Environment (cited 3135).
+\end{itemize}
+
+\section{Method}
+We reduce the dominant computational cost via adaptive resource allocation, activating only the components needed per input. We instantiate this idea for Remote Sensing Land Surface and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Remote Sensing Land Surface. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Robert J. Hijmans, Susan E. Cameron, Juan L. Parra et al.. Very high resolution interpolated climate surfaces for global land areas. \emph{International Journal of Climatology}, 2005. DOI:10.1002/joc.1276
+\bibitem{ref2} M. A. Friedl, Damien Sulla‐Menashe, Bin Tan et al.. MODIS Collection 5 global land cover: Algorithm refinements and characterization of new datasets. \emph{Remote Sensing of Environment}, 2009. DOI:10.1016/j.rse.2009.08.016
+\bibitem{ref3} Dengsheng Lu, Paul W. Mausel, Eduardo S. Brondízio et al.. Change detection techniques. \emph{International Journal of Remote Sensing}, 2004. DOI:10.1080/0143116031000139863
+\bibitem{ref4} Éric Vermote, D. Tanré, J. L. Deuzé et al.. Second Simulation of the Satellite Signal in the Solar Spectrum, 6S: an overview. \emph{IEEE Transactions on Geoscience and Remote Sensing}, 1997. DOI:10.1109/36.581987
+\bibitem{ref5} W.G.M. Bastiaanssen, Massimo Menenti, R.A. Feddes et al.. A remote sensing surface energy balance algorithm for land (SEBAL). 1. Formulation. \emph{Journal of Hydrology}, 1998. DOI:10.1016/s0022-1694(98)00253-4
+\bibitem{ref6} James Voogt, T. R. Oke. Thermal remote sensing of urban climates. \emph{Remote Sensing of Environment}, 2003. DOI:10.1016/s0034-4257(03)00079-8
+\bibitem{ref7} Qiaozhen Mu, Maosheng Zhao, Steven W. Running. Improvements to a MODIS global terrestrial evapotranspiration algorithm. \emph{Remote Sensing of Environment}, 2011. DOI:10.1016/j.rse.2011.02.019
+\bibitem{ref8} Thomas R. Loveland, Bradley C. Reed, Jesslyn F. Brown et al.. Development of a global land cover characteristics database and IGBP DISCover from 1 km AVHRR data. \emph{International Journal of Remote Sensing}, 2000. DOI:10.1080/014311600210191
+\end{thebibliography}
+\end{document}

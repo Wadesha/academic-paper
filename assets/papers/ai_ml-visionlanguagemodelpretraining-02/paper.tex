@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Vision Language Model Pretraining under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Vision Language Model Pretraining. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Vision Language Model Pretraining is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Lu et al. (2019) — "ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks", arXiv (Cornell University) (cited 1676).
+\item Jean-Baptiste et al. (2022) — "Flamingo: a Visual Language Model for Few-Shot Learning", arXiv (Cornell University) (cited 1248).
+\item Kong et al. (2020) — "PANNs: Large-Scale Pretrained Audio Neural Networks for Audio Pattern Recognition", IEEE/ACM Transactions on Audio Speech and Language Processing (cited 1165).
+\item Cui et al. (2024) — "scGPT: toward building a foundation model for single-cell multi-omics using generative AI", Nature Methods (cited 1134).
+\item Oquab et al. (2023) — "DINOv2: Learning Robust Visual Features without Supervision", arXiv (Cornell University) (cited 1056).
+\item Gao et al. (2023) — "CLIP-Adapter: Better Vision-Language Models with Feature Adapters", International Journal of Computer Vision (cited 965).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Vision Language Model Pretraining and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Vision Language Model Pretraining. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Jiasen Lu, Dhruv Batra, Devi Parikh et al.. ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks. \emph{arXiv (Cornell University)}, 2019. DOI:10.48550/arxiv.1908.02265
+\bibitem{ref2} Alayrac, Jean-Baptiste, Jeff Donahue, Pauline Luc et al.. Flamingo: a Visual Language Model for Few-Shot Learning. \emph{arXiv (Cornell University)}, 2022. DOI:10.48550/arxiv.2204.14198
+\bibitem{ref3} Qiuqiang Kong, Yin Cao, Turab Iqbal et al.. PANNs: Large-Scale Pretrained Audio Neural Networks for Audio Pattern Recognition. \emph{IEEE/ACM Transactions on Audio Speech and Language Processing}, 2020. DOI:10.1109/taslp.2020.3030497
+\bibitem{ref4} Haotian Cui, Chloe Wang, Hassaan Maan et al.. scGPT: toward building a foundation model for single-cell multi-omics using generative AI. \emph{Nature Methods}, 2024. DOI:10.1038/s41592-024-02201-0
+\bibitem{ref5} Maxime Oquab, Timothée Darcet, Théo Moutakanni et al.. DINOv2: Learning Robust Visual Features without Supervision. \emph{arXiv (Cornell University)}, 2023. DOI:10.48550/arxiv.2304.07193
+\bibitem{ref6} Peng Gao, Shijie Geng, Renrui Zhang et al.. CLIP-Adapter: Better Vision-Language Models with Feature Adapters. \emph{International Journal of Computer Vision}, 2023. DOI:10.1007/s11263-023-01891-x
+\bibitem{ref7} Hangbo Bao, Dong Li, Piao, Songhao et al.. BEiT: BERT Pre-Training of Image Transformers. \emph{arXiv (Cornell University)}, 2021. DOI:10.48550/arxiv.2106.08254
+\bibitem{ref8} Gen Li, Nan Duan, Yuejian Fang et al.. Unicoder-VL: A Universal Encoder for Vision and Language by Cross-Modal Pre-Training. \emph{Proceedings of the AAAI Conference on Artificial Intelligence}, 2020. DOI:10.1609/aaai.v34i07.6795
+\end{thebibliography}
+\end{document}

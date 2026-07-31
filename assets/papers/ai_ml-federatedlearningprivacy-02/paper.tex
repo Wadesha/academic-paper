@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Federated Learning Privacy under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Federated Learning Privacy. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Federated Learning Privacy is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Yang et al. (2019) — "Federated Machine Learning", ACM Transactions on Intelligent Systems and Technology (cited 6001).
+\item McMahan et al. (2016) — "Communication-Efficient Learning of Deep Networks from Decentralized\n Data", arXiv (Cornell University) (cited 5644).
+\item McMahan et al. (2016) — "Communication-Efficient Learning of Deep Networks from Decentralized Data", arXiv (Cornell University) (cited 5178).
+\item Kairouz et al. (2020) — "Advances and Open Problems in Federated Learning", Foundations and Trends® in Machine Learning (cited 4979).
+\item Li et al. (2020) — "Federated Learning: Challenges, Methods, and Future Directions", IEEE Signal Processing Magazine (cited 4763).
+\item Bonawitz et al. (2017) — "Practical Secure Aggregation for Privacy-Preserving Machine Learning" (cited 3541).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Federated Learning Privacy and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Federated Learning Privacy. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Qiang Yang, Yang Liu, Tianjian Chen et al.. Federated Machine Learning. \emph{ACM Transactions on Intelligent Systems and Technology}, 2019. DOI:10.1145/3298981
+\bibitem{ref2} H. Brendan McMahan, Eider Moore, Daniel Ramage et al.. Communication-Efficient Learning of Deep Networks from Decentralized\n Data. \emph{arXiv (Cornell University)}, 2016. DOI:10.48550/arxiv.1602.05629
+\bibitem{ref3} H. Brendan McMahan, Eider Moore, Daniel Ramage et al.. Communication-Efficient Learning of Deep Networks from Decentralized Data. \emph{arXiv (Cornell University)}, 2016. DOI:10.48550/arxiv.1602.05629
+\bibitem{ref4} Peter Kairouz, H. Brendan McMahan, Brendan Avent et al.. Advances and Open Problems in Federated Learning. \emph{Foundations and Trends® in Machine Learning}, 2020. DOI:10.1561/2200000083
+\bibitem{ref5} Tian Li, Anit Kumar Sahu, Ameet Talwalkar et al.. Federated Learning: Challenges, Methods, and Future Directions. \emph{IEEE Signal Processing Magazine}, 2020. DOI:10.1109/msp.2020.2975749
+\bibitem{ref6} Keith Bonawitz, Vladimir Ivanov, Ben Kreuter et al.. Practical Secure Aggregation for Privacy-Preserving Machine Learning. \emph{}, 2017. DOI:10.1145/3133956.3133982
+\bibitem{ref7} Nicola Rieke, Jonny Hancox, Wenqi Li et al.. The future of digital health with federated learning. \emph{npj Digital Medicine}, 2020. DOI:10.1038/s41746-020-00323-1
+\bibitem{ref8} Wei Yang Bryan Lim, Nguyen Cong Luong, Dinh Thai Hoang et al.. Federated Learning in Mobile Edge Networks: A Comprehensive Survey. \emph{IEEE Communications Surveys \& Tutorials}, 2020. DOI:10.1109/comst.2020.2986024
+\end{thebibliography}
+\end{document}

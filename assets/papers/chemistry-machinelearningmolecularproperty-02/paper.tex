@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Machine Learning Molecular Property Prediction under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Machine Learning Molecular Property Prediction. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Machine Learning Molecular Property Prediction is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Wu et al. (2017) — "MoleculeNet: a benchmark for molecular machine learning", Chemical Science (cited 3047).
+\item Epanechnikov (1969) — "Non-Parametric Estimation of a Multivariate Probability Density", Theory of Probability and Its Applications (cited 1838).
+\item Chen et al. (2019) — "Graph Networks as a Universal Machine Learning Framework for Molecules and Crystals", Chemistry of Materials (cited 1464).
+\item Gupta et al. (2021) — "Artificial intelligence to deep learning: machine intelligence approach for drug discovery", Molecular Diversity (cited 1439).
+\item Unke et al. (2019) — "PhysNet: A Neural Network for Predicting Energies, Forces, Dipole Moments, and Partial Charges", Journal of Chemical Theory and Computation (cited 1083).
+\item Ramakrishnan et al. (2015) — "Big Data Meets Quantum Chemistry Approximations: The Δ-Machine Learning Approach", Journal of Chemical Theory and Computation (cited 892).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Machine Learning Molecular Property Prediction and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Machine Learning Molecular Property Prediction. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Zhenqin Wu, Bharath Ramsundar, Evan N. Feinberg et al.. MoleculeNet: a benchmark for molecular machine learning. \emph{Chemical Science}, 2017. DOI:10.1039/c7sc02664a
+\bibitem{ref2} V. A. Epanechnikov. Non-Parametric Estimation of a Multivariate Probability Density. \emph{Theory of Probability and Its Applications}, 1969. DOI:10.1137/1114019
+\bibitem{ref3} Chi Chen, Weike Ye, Yunxing Zuo et al.. Graph Networks as a Universal Machine Learning Framework for Molecules and Crystals. \emph{Chemistry of Materials}, 2019. DOI:10.1021/acs.chemmater.9b01294
+\bibitem{ref4} Rohan Gupta, Devesh Srivastava, Mehar Sahu et al.. Artificial intelligence to deep learning: machine intelligence approach for drug discovery. \emph{Molecular Diversity}, 2021. DOI:10.1007/s11030-021-10217-3
+\bibitem{ref5} Oliver T. Unke, Markus Meuwly. PhysNet: A Neural Network for Predicting Energies, Forces, Dipole Moments, and Partial Charges. \emph{Journal of Chemical Theory and Computation}, 2019. DOI:10.1021/acs.jctc.9b00181
+\bibitem{ref6} Raghunathan Ramakrishnan, Pavlo O. Dral, Matthias Rupp et al.. Big Data Meets Quantum Chemistry Approximations: The Δ-Machine Learning Approach. \emph{Journal of Chemical Theory and Computation}, 2015. DOI:10.1021/acs.jctc.5b00099
+\bibitem{ref7} Katja Hansen, Franziska Biegler, Raghunathan Ramakrishnan et al.. Machine Learning Predictions of Molecular Properties: Accurate Many-Body Potentials and Nonlocality in Chemical Space. \emph{The Journal of Physical Chemistry Letters}, 2015. DOI:10.1021/acs.jpclett.5b00831
+\bibitem{ref8} Yuyang Wang, Jianren Wang, Zhonglin Cao et al.. Molecular contrastive learning of representations via graph neural networks. \emph{Nature Machine Intelligence}, 2022. DOI:10.1038/s42256-022-00447-x
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Scalable Structural Variant Detection for Large-Scale Settings}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Structural Variant Detection. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Structural Variant Detection is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Manolio et al. (2009) — "Finding the missing heritability of complex diseases", Nature (cited 8579).
+\item Chen et al. (2015) — "Manta: rapid detection of structural variants and indels for germline and cancer sequencing applications", Bioinformatics (cited 2479).
+\item Cheng et al. (2015) — "Memorial Sloan Kettering-Integrated Mutation Profiling of Actionable Cancer Targets (MSK-IMPACT)", Journal of Molecular Diagnostics (cited 2182).
+\item Ye et al. (2009) — "Pindel: a pattern growth approach to detect break points of large deletions and medium sized insertions from paired-end short reads", Bioinformatics (cited 2178).
+\item Jain et al. (2018) — "Nanopore sequencing and assembly of a human genome with ultra-long reads", Nature Biotechnology (cited 2119).
+\item Wenger et al. (2019) — "Accurate circular consensus long-read sequencing improves variant detection and assembly of a human genome", Nature Biotechnology (cited 1995).
+\end{itemize}
+
+\section{Method}
+We decompose the problem across shards with a communication-efficient aggregation rule that keeps overhead sublinear in scale. We instantiate this idea for Structural Variant Detection and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Structural Variant Detection. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Teri A. Manolio, Francis S. Collins, Nancy J. Cox et al.. Finding the missing heritability of complex diseases. \emph{Nature}, 2009. DOI:10.1038/nature08494
+\bibitem{ref2} Xiaoyu Chen, Ole Schulz-Trieglaff, Richard J. Shaw et al.. Manta: rapid detection of structural variants and indels for germline and cancer sequencing applications. \emph{Bioinformatics}, 2015. DOI:10.1093/bioinformatics/btv710
+\bibitem{ref3} Donavan T. Cheng, Talia Mitchell, Ahmet Zehir et al.. Memorial Sloan Kettering-Integrated Mutation Profiling of Actionable Cancer Targets (MSK-IMPACT). \emph{Journal of Molecular Diagnostics}, 2015. DOI:10.1016/j.jmoldx.2014.12.006
+\bibitem{ref4} Kai Ye, Marcel H. Schulz, Quan Long et al.. Pindel: a pattern growth approach to detect break points of large deletions and medium sized insertions from paired-end short reads. \emph{Bioinformatics}, 2009. DOI:10.1093/bioinformatics/btp394
+\bibitem{ref5} Miten Jain, Sergey Koren, Karen H. Miga et al.. Nanopore sequencing and assembly of a human genome with ultra-long reads. \emph{Nature Biotechnology}, 2018. DOI:10.1038/nbt.4060
+\bibitem{ref6} Aaron M. Wenger, Paul Peluso, William J. Rowell et al.. Accurate circular consensus long-read sequencing improves variant detection and assembly of a human genome. \emph{Nature Biotechnology}, 2019. DOI:10.1038/s41587-019-0217-9
+\bibitem{ref7} Fritz J. Sedlazeck, Philipp Rescheneder, Moritz Smolka et al.. Accurate detection of complex structural variations using single-molecule sequencing. \emph{Nature Methods}, 2018. DOI:10.1038/s41592-018-0001-7
+\bibitem{ref8} Ryan M. Layer, Colby Chiang, Aaron R. Quinlan et al.. LUMPY: a probabilistic framework for structural variant discovery. \emph{Genome biology}, 2014. DOI:10.1186/gb-2014-15-6-r84
+\end{thebibliography}
+\end{document}

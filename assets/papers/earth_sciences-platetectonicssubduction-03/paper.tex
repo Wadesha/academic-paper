@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Scalable Plate Tectonics Subduction for Large-Scale Settings}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Plate Tectonics Subduction. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Plate Tectonics Subduction is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Taylor et al. (1995) — "The geochemical evolution of the continental crust", Reviews of Geophysics (cited 4554).
+\item Tapponnier et al. (2001) — "Oblique Stepwise Rise and Growth of the Tibet Plateau", Science (cited 3912).
+\item Şengör et al. (1981) — "Tethyan evolution of Turkey: A plate tectonic approach", Tectonophysics (cited 3362).
+\item Pearce et al. (1995) — "Tectonic Implications of the Composition of Volcanic ARC Magmas", Annual Review of Earth and Planetary Sciences (cited 2748).
+\item Gill (1981) — "Orogenic Andesites and Plate Tectonics", Minerals and rocks (cited 2611).
+\item Hall (2002) — "Cenozoic geological and plate tectonic evolution of SE Asia and the SW Pacific: computer-based reconstructions, model and animations", Journal of Asian Earth Sciences (cited 2600).
+\end{itemize}
+
+\section{Method}
+We decompose the problem across shards with a communication-efficient aggregation rule that keeps overhead sublinear in scale. We instantiate this idea for Plate Tectonics Subduction and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Plate Tectonics Subduction. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Stuart Ross Taylor, S. M. McLennan. The geochemical evolution of the continental crust. \emph{Reviews of Geophysics}, 1995. DOI:10.1029/95rg00262
+\bibitem{ref2} Paul Tapponnier, Xu Zhiqin, Françoise Roger et al.. Oblique Stepwise Rise and Growth of the Tibet Plateau. \emph{Science}, 2001. DOI:10.1126/science.105978
+\bibitem{ref3} A. M. Celâl Şengör, Yücel Yılmaz. Tethyan evolution of Turkey: A plate tectonic approach. \emph{Tectonophysics}, 1981. DOI:10.1016/0040-1951(81)90275-4
+\bibitem{ref4} Julian A. Pearce, D.W. Peate. Tectonic Implications of the Composition of Volcanic ARC Magmas. \emph{Annual Review of Earth and Planetary Sciences}, 1995. DOI:10.1146/annurev.ea.23.050195.001343
+\bibitem{ref5} James B. Gill. Orogenic Andesites and Plate Tectonics. \emph{Minerals and rocks}, 1981. DOI:10.1007/978-3-642-68012-0
+\bibitem{ref6} Robert Hall. Cenozoic geological and plate tectonic evolution of SE Asia and the SW Pacific: computer-based reconstructions, model and animations. \emph{Journal of Asian Earth Sciences}, 2002. DOI:10.1016/s1367-9120(01)00069-4
+\bibitem{ref7} Robert A. Berner, Antonio C. Lasaga, Robert M. Garrels. The carbonate-silicate geochemical cycle and its effect on atmospheric carbon dioxide over the past 100 million years. \emph{American Journal of Science}, 1983. DOI:10.2475/ajs.283.7.641
+\bibitem{ref8} Warren Hamilton. Tectonics of the Indonesian region. \emph{USGS professional paper}, 1979. DOI:10.3133/pp1078
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Efficient Ice Sheet Mass Balance: A Resource-Aware Approach}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Ice Sheet Mass Balance. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Ice Sheet Mass Balance is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Paterson et al. (1969) — "The Physics of Glaciers" (cited 3360).
+\item Screen et al. (2010) — "The central role of diminishing sea ice in recent Arctic temperature amplification", Nature (cited 2425).
+\item Lefsky et al. (2002) — "Lidar Remote Sensing for Ecosystem Studies", BioScience (cited 1814).
+\item Rignot et al. (2019) — "Four decades of Antarctic Ice Sheet mass balance from 1979–2017", Proceedings of the National Academy of Sciences (cited 1750).
+\item Shepherd et al. (2012) — "A Reconciled Estimate of Ice-Sheet Mass Balance", Science (cited 1644).
+\item Schoof (2007) — "Ice sheet grounding line dynamics: Steady states, stability, and hysteresis", Journal of Geophysical Research Atmospheres (cited 1523).
+\end{itemize}
+
+\section{Method}
+We reduce the dominant computational cost via adaptive resource allocation, activating only the components needed per input. We instantiate this idea for Ice Sheet Mass Balance and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Ice Sheet Mass Balance. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} W. S. B. Paterson, John T. Andrews. The Physics of Glaciers. \emph{}, 1969. 
+\bibitem{ref2} James A. Screen, Ian Simmonds. The central role of diminishing sea ice in recent Arctic temperature amplification. \emph{Nature}, 2010. DOI:10.1038/nature09051
+\bibitem{ref3} M. A. Lefsky, Warren B. Cohen, Geoffrey G. Parker et al.. Lidar Remote Sensing for Ecosystem Studies. \emph{BioScience}, 2002. DOI:10.1641/0006-3568(2002)052[0019:lrsfes]2.0.co;2
+\bibitem{ref4} Eric Rignot, J. Mouginot, B. Scheuchl et al.. Four decades of Antarctic Ice Sheet mass balance from 1979–2017. \emph{Proceedings of the National Academy of Sciences}, 2019. DOI:10.1073/pnas.1812883116
+\bibitem{ref5} Andrew Shepherd, Erik R. Ivins, A Geruo et al.. A Reconciled Estimate of Ice-Sheet Mass Balance. \emph{Science}, 2012. DOI:10.1126/science.1228102
+\bibitem{ref6} Christian Schoof. Ice sheet grounding line dynamics: Steady states, stability, and hysteresis. \emph{Journal of Geophysical Research Atmospheres}, 2007. DOI:10.1029/2006jf000664
+\bibitem{ref7} Hamish D. Pritchard, S. Ligtenberg, H. A. Fricker et al.. Antarctic ice-sheet loss driven by basal melting of ice shelves. \emph{Nature}, 2012. DOI:10.1038/nature10968
+\bibitem{ref8} W. T. Pfeffer, A. A. Arendt, Andrew Bliss et al.. The Randolph Glacier Inventory: a globally complete inventory of glaciers. \emph{Journal of Glaciology}, 2014. DOI:10.3189/2014jog13j176
+\end{thebibliography}
+\end{document}

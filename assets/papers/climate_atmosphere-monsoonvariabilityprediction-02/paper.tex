@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Monsoon Variability Prediction under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Monsoon Variability Prediction. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Monsoon Variability Prediction is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Webster et al. (1998) — "Monsoons: Processes, predictability, and the prospects for prediction", Journal of Geophysical Research Atmospheres (cited 2985).
+\item Wheeler et al. (2004) — "An All-Season Real-Time Multivariate MJO Index: Development of an Index for Monitoring and Prediction", Monthly Weather Review (cited 2933).
+\item Webster et al. (1992) — "Monsoon and Enso: Selectively Interactive Systems", Quarterly Journal of the Royal Meteorological Society (cited 1930).
+\item Norman et al. (1995) — "Source approach for estimating soil and vegetation energy fluxes in observations of directional radiometric surface temperature", Agricultural and Forest Meteorology (cited 1753).
+\item Schott et al. (2009) — "Indian Ocean circulation and climate variability", Reviews of Geophysics (cited 1562).
+\item Cook et al. (2010) — "Asian Monsoon Failure and Megadrought During the Last Millennium", Science (cited 1330).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Monsoon Variability Prediction and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Monsoon Variability Prediction. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Peter J. Webster, Víctor Magaña, T. N. Palmer et al.. Monsoons: Processes, predictability, and the prospects for prediction. \emph{Journal of Geophysical Research Atmospheres}, 1998. DOI:10.1029/97jc02719
+\bibitem{ref2} Matthew C. Wheeler, Harry H. Hendon. An All-Season Real-Time Multivariate MJO Index: Development of an Index for Monitoring and Prediction. \emph{Monthly Weather Review}, 2004. DOI:10.1175/1520-0493(2004)132<1917:aarmmi>2.0.co;2
+\bibitem{ref3} Peter J. Webster, Song Yang. Monsoon and Enso: Selectively Interactive Systems. \emph{Quarterly Journal of the Royal Meteorological Society}, 1992. DOI:10.1002/qj.49711850705
+\bibitem{ref4} John M. Norman, William P. Kustas, K. S. Humes. Source approach for estimating soil and vegetation energy fluxes in observations of directional radiometric surface temperature. \emph{Agricultural and Forest Meteorology}, 1995. DOI:10.1016/0168-1923(95)02265-y
+\bibitem{ref5} Friedrich Schott, Shang‐Ping Xie, Julian P. McCreary. Indian Ocean circulation and climate variability. \emph{Reviews of Geophysics}, 2009. DOI:10.1029/2007rg000245
+\bibitem{ref6} Edward R. Cook, Kevin J. Anchukaitis, Brendan M. Buckley et al.. Asian Monsoon Failure and Megadrought During the Last Millennium. \emph{Science}, 2010. DOI:10.1126/science.1185188
+\bibitem{ref7} L. Loulergue, A. Schilt, Renato Spahni et al.. Orbital and millennial-scale features of atmospheric CH4 over the past 800,000 years. \emph{Nature}, 2008. DOI:10.1038/nature06950
+\bibitem{ref8} Alessandra Giannini, R. Saravanan, Ping Chang. Oceanic Forcing of Sahel Rainfall on Interannual to Interdecadal Time Scales. \emph{Science}, 2003. DOI:10.1126/science.1089357
+\end{thebibliography}
+\end{document}

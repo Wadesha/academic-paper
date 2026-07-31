@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Volcanic Eruption Forecasting under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Volcanic Eruption Forecasting. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Volcanic Eruption Forecasting is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Draxler et al. (1998) — "An overview of the HYSPLIT\_4 modelling system for trajectories, dispersion and deposition", Australian meteorological magazine (cited 1930).
+\item Onogi et al. (2007) — "The JRA-25 Reanalysis", Journal of the Meteorological Society of Japan Ser II (cited 1633).
+\item Hawkes et al. (1963) — "Geochemistry in Mineral Exploration", Soil Science (cited 1005).
+\item Chouet (1996) — "Long-period volcano seismicity: its source and use in eruption forecasting", Nature (cited 942).
+\item Mastin et al. (2009) — "A multidisciplinary effort to assign realistic source parameters to models of volcanic ash-cloud transport and dispersion during eruptions", Journal of Volcanology and Geothermal Research (cited 784).
+\item Brenguier et al. (2008) — "Towards forecasting volcanic eruptions using seismic noise", Nature Geoscience (cited 696).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Volcanic Eruption Forecasting and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Volcanic Eruption Forecasting. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Roland R. Draxler, G.D. Hess. An overview of the HYSPLIT\_4 modelling system for trajectories, dispersion and deposition. \emph{Australian meteorological magazine}, 1998. DOI:10.1071/es98032
+\bibitem{ref2} Kazutoshi Onogi, Junichi Tsutsui, Hiroshi Koide et al.. The JRA-25 Reanalysis. \emph{Journal of the Meteorological Society of Japan Ser II}, 2007. DOI:10.2151/jmsj.85.369
+\bibitem{ref3} H. E. Hawkes, John S. Webb. Geochemistry in Mineral Exploration. \emph{Soil Science}, 1963. DOI:10.1097/00010694-196304000-00016
+\bibitem{ref4} Bernard Chouet. Long-period volcano seismicity: its source and use in eruption forecasting. \emph{Nature}, 1996. DOI:10.1038/380309a0
+\bibitem{ref5} Larry G. Mastin, Marianne Guffanti, R. Servranckx et al.. A multidisciplinary effort to assign realistic source parameters to models of volcanic ash-cloud transport and dispersion during eruptions. \emph{Journal of Volcanology and Geothermal Research}, 2009. DOI:10.1016/j.jvolgeores.2009.01.008
+\bibitem{ref6} Florent Brenguier, Н. М. Шапиро, Michel Campillo et al.. Towards forecasting volcanic eruptions using seismic noise. \emph{Nature Geoscience}, 2008. DOI:10.1038/ngeo104
+\bibitem{ref7} John H. Sorensen. Hazard Warning Systems: Review of 20 Years of Progress. \emph{Natural Hazards Review}, 2000. DOI:10.1061/(asce)1527-6988(2000)1:2(119)
+\bibitem{ref8} R. S. J. Sparks. Forecasting volcanic eruptions. \emph{Earth and Planetary Science Letters}, 2003. DOI:10.1016/s0012-821x(03)00124-9
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Causal Inference Observational Data under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Causal Inference Observational Data. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Causal Inference Observational Data is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Stuart (2010) — "Matching Methods for Causal Inference: A Review and a Look Forward", Statistical Science (cited 5421).
+\item Spirtes et al. (2001) — "Causation, Prediction, and Search", The MIT Press eBooks (cited 4503).
+\item Hartwig et al. (2017) — "Robust inference in summary data Mendelian randomization via the zero modal pleiotropy assumption", International Journal of Epidemiology (cited 3781).
+\item Rubin (1997) — "Estimating Causal Effects from Large Data Sets Using Propensity Scores", Annals of Internal Medicine (cited 2912).
+\item Hernán et al. (2016) — "Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available: Table 1.", American Journal of Epidemiology (cited 2850).
+\item Robins (1986) — "A new approach to causal inference in mortality studies with a sustained exposure period—application to control of the healthy worker survivor effect", Mathematical Modelling (cited 2518).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Causal Inference Observational Data and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Causal Inference Observational Data. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Elizabeth A. Stuart. Matching Methods for Causal Inference: A Review and a Look Forward. \emph{Statistical Science}, 2010. DOI:10.1214/09-sts313
+\bibitem{ref2} Peter Spirtes, Clark Glymour, Richard Scheines. Causation, Prediction, and Search. \emph{The MIT Press eBooks}, 2001. DOI:10.7551/mitpress/1754.001.0001
+\bibitem{ref3} Fernando Pires Hartwig, George Davey Smith, Jack Bowden. Robust inference in summary data Mendelian randomization via the zero modal pleiotropy assumption. \emph{International Journal of Epidemiology}, 2017. DOI:10.1093/ije/dyx102
+\bibitem{ref4} Donald B. Rubin. Estimating Causal Effects from Large Data Sets Using Propensity Scores. \emph{Annals of Internal Medicine}, 1997. DOI:10.7326/0003-4819-127-8\_part\_2-199710151-00064
+\bibitem{ref5} Miguel A. Hernán, James M. Robins. Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available: Table 1.. \emph{American Journal of Epidemiology}, 2016. DOI:10.1093/aje/kwv254
+\bibitem{ref6} James M. Robins. A new approach to causal inference in mortality studies with a sustained exposure period—application to control of the healthy worker survivor effect. \emph{Mathematical Modelling}, 1986. DOI:10.1016/0270-0255(86)90088-6
+\bibitem{ref7} Joy D. Osofsky. Handbook of infant development. \emph{}, 1979. 
+\bibitem{ref8} Heejung Bang, James M. Robins. Doubly Robust Estimation in Missing Data and Causal Inference Models. \emph{Biometrics}, 2005. DOI:10.1111/j.1541-0420.2005.00377.x
+\end{thebibliography}
+\end{document}

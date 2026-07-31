@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Scalable Multiple Hypothesis Testing False Discovery for Large-Scale Settings}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Multiple Hypothesis Testing False Discovery. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Multiple Hypothesis Testing False Discovery is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Storey et al. (2003) — "Statistical significance for genomewide studies", Proceedings of the National Academy of Sciences (cited 10152).
+\item Storey (2002) — "A Direct Approach to False Discovery Rates", Journal of the Royal Statistical Society Series B (Statistical Methodology) (cited 5815).
+\item Genovese et al. (2002) — "Thresholding of Statistical Maps in Functional Neuroimaging Using the False Discovery Rate", NeuroImage (cited 5038).
+\item Anderson (2008) — "Multiple Inference and Gender Differences in the Effects of Early Intervention: A Reevaluation of the Abecedarian, Perry Preschool, and Early Training Projects", Journal of the American Statistical Association (cited 2396).
+\item Storey (2003) — "The positive false discovery rate: a Bayesian interpretation and the q-value", The Annals of Statistics (cited 2316).
+\item Nakagawa (2004) — "A farewell to Bonferroni: the problems of low statistical power and publication bias", Behavioral Ecology (cited 2132).
+\end{itemize}
+
+\section{Method}
+We decompose the problem across shards with a communication-efficient aggregation rule that keeps overhead sublinear in scale. We instantiate this idea for Multiple Hypothesis Testing False Discovery and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Multiple Hypothesis Testing False Discovery. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} John D. Storey, Robert Tibshirani. Statistical significance for genomewide studies. \emph{Proceedings of the National Academy of Sciences}, 2003. DOI:10.1073/pnas.1530509100
+\bibitem{ref2} John D. Storey. A Direct Approach to False Discovery Rates. \emph{Journal of the Royal Statistical Society Series B (Statistical Methodology)}, 2002. DOI:10.1111/1467-9868.00346
+\bibitem{ref3} Christopher R. Genovese, Nicole A. Lazar, Thomas E. Nichols. Thresholding of Statistical Maps in Functional Neuroimaging Using the False Discovery Rate. \emph{NeuroImage}, 2002. DOI:10.1006/nimg.2001.1037
+\bibitem{ref4} Michael Anderson. Multiple Inference and Gender Differences in the Effects of Early Intervention: A Reevaluation of the Abecedarian, Perry Preschool, and Early Training Projects. \emph{Journal of the American Statistical Association}, 2008. DOI:10.1198/016214508000000841
+\bibitem{ref5} John D. Storey. The positive false discovery rate: a Bayesian interpretation and the q-value. \emph{The Annals of Statistics}, 2003. DOI:10.1214/aos/1074290335
+\bibitem{ref6} Shinichi Nakagawa. A farewell to Bonferroni: the problems of low statistical power and publication bias. \emph{Behavioral Ecology}, 2004. DOI:10.1093/beheco/arh107
+\bibitem{ref7} András Lánczky, Balázs Győrffy. Web-Based Survival Analysis Tool Tailored for Medical Research (KMplot): Development and Implementation. \emph{Journal of Medical Internet Research}, 2021. DOI:10.2196/27633
+\bibitem{ref8} Balázs Győrffy. Survival analysis across the entire transcriptome identifies biomarkers with the highest prognostic power in breast cancer. \emph{Computational and Structural Biotechnology Journal}, 2021. DOI:10.1016/j.csbj.2021.07.014
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\title{Robust Transcriptome Expression Quantitative Trait under Distribution Shift}
+\author{Anonymous}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper studies Transcriptome Expression Quantitative Trait. Grounded in a real, citable literature \cite{ref1,ref2,ref3,ref4,ref5,ref6,ref7,ref8},
+we propose a focused method and report \textbf{illustrative} experiments.
+All references below are real and verifiable (OpenAlex/arXiv); the reported
+numbers are simulated to illustrate intended behaviour.
+\end{abstract}
+
+\section{Introduction}
+Transcriptome Expression Quantitative Trait is an active research area. This work targets a concrete gap identified from
+the recent literature and contributes a method together with an evaluation protocol.
+
+\section{Related Work (real literature)}
+The following works, retrieved from public bibliographic APIs, frame our study:
+\begin{itemize}
+\item Võsa et al. (2021) — "Large-scale cis- and trans-eQTL analyses identify thousands of genetic loci and polygenic scores that regulate blood gene expression", Nature Genetics (cited 2239).
+\item Schadt et al. (2003) — "Genetics of gene expression surveyed in maize, mouse and man", Nature (cited 1543).
+\item Pickrell et al. (2010) — "Understanding mechanisms underlying human gene expression variation with RNA sequencing", Nature (cited 1377).
+\item Wild (2012) — "The exposome: from concept to utility", International Journal of Epidemiology (cited 1369).
+\item Koornneef et al. (2002) — "Seed dormancy and germination", Current Opinion in Plant Biology (cited 1189).
+\item Wang et al. (2018) — "Comprehensive functional genomic resource and integrative model for the human brain", Science (cited 1101).
+\end{itemize}
+
+\section{Method}
+We model distribution shift explicitly and optimise a worst-case objective over an uncertainty set of plausible test distributions. We instantiate this idea for Transcriptome Expression Quantitative Trait and analyse its cost/quality trade-off.
+
+\section{Experiments (Illustrative)}
+\begin{center}
+\begin{tabular}{lcc}
+System & Primary Metric & Efficiency \\ \hline
+Strong baseline & 0.812 & 1.00$\times$ \\
+Ablation & 0.828 & 0.92$\times$ \\
+\textbf{Ours} & \textbf{0.851} & \textbf{0.71$\times$}
+\end{tabular}
+\end{center}
+\emph{Metrics simulated to illustrate the intended effect; not measured.}
+
+\section{Conclusion}
+We connected a real literature to a concrete method for Transcriptome Expression Quantitative Trait. Future work will
+validate the illustrative results with real experiments.
+
+\begin{thebibliography}{9}
+\bibitem{ref1} Urmo Võsa, Annique Claringbould, Harm-Jan Westra et al.. Large-scale cis- and trans-eQTL analyses identify thousands of genetic loci and polygenic scores that regulate blood gene expression. \emph{Nature Genetics}, 2021. DOI:10.1038/s41588-021-00913-z
+\bibitem{ref2} Eric E. Schadt, Stephanie A. Monks, Thomas A. Drake et al.. Genetics of gene expression surveyed in maize, mouse and man. \emph{Nature}, 2003. DOI:10.1038/nature01434
+\bibitem{ref3} Joseph K. Pickrell, John C. Marioni, Athma A. Pai et al.. Understanding mechanisms underlying human gene expression variation with RNA sequencing. \emph{Nature}, 2010. DOI:10.1038/nature08872
+\bibitem{ref4} Christopher P. Wild. The exposome: from concept to utility. \emph{International Journal of Epidemiology}, 2012. DOI:10.1093/ije/dyr236
+\bibitem{ref5} Maarten Koornneef, Leónie Bentsink, Henk W. M. Hilhorst. Seed dormancy and germination. \emph{Current Opinion in Plant Biology}, 2002. DOI:10.1016/s1369-5266(01)00219-9
+\bibitem{ref6} Daifeng Wang, Shuang Liu, Jonathan Warrell et al.. Comprehensive functional genomic resource and integrative model for the human brain. \emph{Science}, 2018. DOI:10.1126/science.aat8464
+\bibitem{ref7} Michael Wainberg, Nasa Sinnott-Armstrong, Nicholas Mancuso et al.. Opportunities and challenges for transcriptome-wide association studies. \emph{Nature Genetics}, 2019. DOI:10.1038/s41588-019-0385-z
+\bibitem{ref8} C. Robertson McClung. Plant Circadian Rhythms. \emph{The Plant Cell}, 2006. DOI:10.1105/tpc.106.040980
+\end{thebibliography}
+\end{document}
