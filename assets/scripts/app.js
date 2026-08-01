@@ -218,11 +218,33 @@
           }
         }
       }
+      // Look up paper-specific subfield module
+      var subfieldMod = null;
+      if (window.KB_SUBFIELD && s && s.id) {
+        var sfid = s.id.toLowerCase().replace(/[^a-z0-9]/g, '');
+        for (var sk in window.KB_SUBFIELD) {
+          var skk = sk.toLowerCase().replace(/[^a-z0-9]/g, '');
+          if (sfid.indexOf(skk) >= 0 || skk.indexOf(sfid) >= 0) {
+            subfieldMod = window.KB_SUBFIELD[sk];
+            break;
+          }
+        }
+      }
       var concepts = ids.map(function (id) {
         var mod = window.KB_DATA[id];
         if (!mod) return null;
         return { id: id, title: mod.title || id, level: mod.level || '', content: mod.content || '' };
       }).filter(Boolean);
+      // Prepend subfield-specific module
+      if (subfieldMod) {
+        concepts.unshift({
+          id: 'paper_topic',
+          title: subfieldMod.title || '',
+          level: subfieldMod.level || '',
+          content: subfieldMod.content || '',
+          isSubfield: true
+        });
+      }
       return { concepts: concepts, specific: specific };
     }
     return p.prerequisites || { concepts: [], specific: '' };
@@ -232,6 +254,7 @@
     if (!pre || !pre.concepts || !pre.concepts.length) return '';
     var cards = pre.concepts.map(function (c, idx) {
       var lvl = c.level ? '<span class="kb-level">' + esc(c.level) + '</span>' : '';
+      var sfbadge = c.isSubfield ? '<span class="kb-subfield-badge">本文专题</span>' : '';
       var body = '';
       if (c.content) {
         var paras = c.content.split(/\n\n+/);
@@ -243,7 +266,7 @@
       }
       return '<div class="kb-card">' +
         '<div class="kb-head"><span class="kb-num">' + (idx + 1) + '</span>' +
-        '<span class="kb-name">' + esc(c.title) + '</span>' + lvl + '</div>' +
+        '<span class="kb-name">' + esc(c.title) + '</span>' + lvl + sfbadge + '</div>' +
         body + '</div>';
     }).join('');
     var specific = pre.specific

@@ -32,5 +32,8 @@ with open(out_path, "w", encoding="utf-8") as f:
     f.write("window.KB_SPECIFIC = ")
     json.dump(kb.SUBFIELD_SPECIFIC, f, ensure_ascii=False, indent=1)
     f.write(";\n")
+    f.write("window.KB_SUBFIELD = ")
+    json.dump(kb.SUBFIELD_KB, f, ensure_ascii=False, indent=1)
+    f.write(";\n")
 
 print("Generated %s with %d modules" % (out_path, len(kb.KB)))
