@@ -4,9 +4,15 @@
 Run:  python gen_kb_js.py
 Output: assets/scripts/data.kb.js
 """
-import json, sys, os
+import json, sys, os, re
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "generator"))
 import kb
+
+# Strip number prefix from discipline keys for site compatibility
+# (site uses "ai_ml", kb.py uses "01_ai_ml")
+_discipline_for_site = {}
+for _k, _v in kb.DISCIPLINE_PREREQS.items():
+    _discipline_for_site[re.sub(r"^\d+_", "", _k)] = _v
 
 out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "scripts")
 os.makedirs(out_dir, exist_ok=True)
@@ -21,7 +27,7 @@ with open(out_path, "w", encoding="utf-8") as f:
     json.dump(kb.UNIVERSAL_PREREQS, f, ensure_ascii=False)
     f.write(";\n")
     f.write("window.KB_DISCIPLINE = ")
-    json.dump(kb.DISCIPLINE_PREREQS, f, ensure_ascii=False, indent=1)
+    json.dump(_discipline_for_site, f, ensure_ascii=False, indent=1)
     f.write(";\n")
     f.write("window.KB_SPECIFIC = ")
     json.dump(kb.SUBFIELD_SPECIFIC, f, ensure_ascii=False, indent=1)

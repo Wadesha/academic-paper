@@ -233,61 +233,61 @@ window.KB_DATA = {
 };
 window.KB_UNIVERSAL = ["scientific_method", "math_foundations", "prob_stats", "data_analysis", "academic_reading", "computing_basics"];
 window.KB_DISCIPLINE = {
- "01_ai_ml": [
+ "ai_ml": [
   "ml_basics",
   "nn_deep",
   "transformer_attention",
   "optimization_training"
  ],
- "02_cs_systems_security": [
+ "cs_systems_security": [
   "systems_arch",
   "security_crypto",
   "distributed_systems",
   "algorithms_complexity"
  ],
- "04_statistics_probability": [
+ "statistics_probability": [
   "stat_inference",
   "bayesian_methods",
   "regression_analysis",
   "stochastic_process"
  ],
- "07_chemistry": [
+ "chemistry": [
   "quantum_chemistry",
   "chemical_bonds",
   "reaction_kinetics",
   "thermo_chemistry"
  ],
- "08_biological_sciences": [
+ "biological_sciences": [
   "cell_biology",
   "molecular_biology",
   "genetics_evolution",
   "biochemistry"
  ],
- "09_genetics_genomics": [
+ "genetics_genomics": [
   "dna_genome",
   "gene_expression",
   "population_genetics",
   "genomics_tech"
  ],
- "10_neuroscience": [
+ "neuroscience": [
   "neuroanatomy",
   "neural_signaling",
   "brain_systems",
   "neuro_methods"
  ],
- "11_earth_sciences": [
+ "earth_sciences": [
   "plate_tectonics",
   "mineralogy_petrology",
   "geological_time",
   "geo_processes"
  ],
- "12_climate_atmosphere": [
+ "climate_atmosphere": [
   "atmospheric_physics",
   "climate_dynamics",
   "weather_systems",
   "climate_data_analysis"
  ],
- "13_environmental_ecology": [
+ "environmental_ecology": [
   "ecosystem_ecology",
   "environmental_chemistry",
   "conservation_biology",
